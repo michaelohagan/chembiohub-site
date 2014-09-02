@@ -415,6 +415,7 @@ h1 > a.title-link {
 .post h1 {
     background-color: #002147;
     padding:10px;
+    color: #eee;
 }
 .post .body {
     padding: 10px;
@@ -424,4 +425,7 @@ h1 > a.title-link {
 }
 .post .date {
     padding: 10px;
+}
+.archive {
+    margin-top:20px;
 }
