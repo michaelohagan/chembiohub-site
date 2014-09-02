@@ -73,7 +73,7 @@ a {
 
 a:hover,
 a:focus {
-    color: rgb(224, 222, 217) !important;
+    color: rgb(0, 119, 112) !important;
     text-decoration: none;
     outline: 0;
 }
