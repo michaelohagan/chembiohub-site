@@ -28,6 +28,8 @@ where alt text is what will be shown if the image fails to load, "Title" is what
 There is a really useful intro to markdown here:
 https://daringfireball.net/projects/markdown/basics
 
-When you are done creating your entry, just click "Commit New File". You can look at a preview of your file and go back and edit your file later.
+When you are done creating your entry, you need to specify the file name for your entry in the box next to _drafts. the format for this, so it gets picked up by the server, is YYYY-MM-DD-some-dash-separated-title.md For example 2014-09-02-my-new-blog-post.md This indicates that the file has been written in Markdown and will show as preview when you click the file in the list.
+
+When you've done this just click "Commit New File". You can look at a preview of your file and go back and edit your file later.
 
 When you're happy with your entry, Paul or Andrew will make it live.
