@@ -1,8 +1,19 @@
 ---
 layout: main
 ---
-<div class='post'>
-  <h1><a href='/chembiohub-site/{{page.url}}'>{{page.title}}</a></h1>
-  <div class='date'>posted {{page.date | date_to_string}}</div>
-  <div class='body'>{{ content }}</div>
+<div class="row">
+
+	<div class="col-md-8 col-xs-12">
+
+		<div class='post'>
+		  <h1>{{page.title}}</h1>
+		  <div class='date'>posted {{page.date | date_to_string}}</div>
+		  <div class='body'>{{ content }}</div>
+		</div>
+	</div>
+
+	<div class="col-md-4 col-xs-12">
+		{% include archive.html %}
+	</div>
+
 </div>
