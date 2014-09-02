@@ -8,8 +8,8 @@ title: Chembiohub Blog
 	  </div>
 	  {% assign author = site.authors[site.posts.first.author] %}
 	  <div class='post'>
-	    <h1><a class="title-link" href='/chembiohub-site/{{site.posts.first.url}}'>{{site.posts.first.title}} by {{author.display_name}}</a></h1>
-	    <div class='date'>posted {{site.posts.first.date | date_to_string}}</div>
+	    <h1><a class="title-link" href='/chembiohub-site/{{site.posts.first.url}}'>{{site.posts.first.title}}</a></h1>
+	    <div class='date'>posted {{site.posts.first.date | date_to_string}} by {{author.display_name}}</div>
 	    <div class='body'>{{ site.posts.first.content }}</div>
 	  </div>
 
