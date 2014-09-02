@@ -1,8 +1,9 @@
 ---
 layout: main
 ---
+{% assign author = site.authors[page.author] %}
 <div class='post'>
   <h1>{{page.title}}</h1>
-  <div class='date'>posted {{page.date | date_to_string}} by {{page.author}}</div>
+  <div class='date'>posted {{page.date | date_to_string}} by {{author.display_name}}</div>
   <div class='body'>{{ content }}</div>
 </div>
