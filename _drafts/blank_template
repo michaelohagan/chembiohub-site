@@ -1,0 +1,33 @@
+---
+title: Title Goes Here
+author: paul|andy|michael|karen
+layout:post
+---
+
+#Top Level Header
+##Second level header
+###third level header
+
+Posts on the blog use Markdown, a simple language which is essentially shorthand for web content. Markdown gets turned into HTML by the server automatically.
+
+The 5 lines at the top of the page need to be present in every post. Just change the title and author lines for your post. Leave the line layout:post - this tells the server to use the post template to add styling information and make every post consistent.
+
+Ordinary paragraphs can just be typed
+
+*bullet
+*lists
+*like
+*this
+
+Links work like this: [link text in square brackets](http://www.example.com)
+
+images work like this:
+![alt text](chembiohub_site/assets/images/file_name.jpg "Title")
+where alt text is what will be shown if the image fails to load, "Title" is what is displayed when hovering over the image, and the image path is where the image is loaded from - if it is an external image (hotlinking) just use the url of the image here. If it is an image you want to add, change the file_name and speak to Paul or Andrew to sort out adding the file on the server.
+
+There is a really useful intro to markdown here:
+https://daringfireball.net/projects/markdown/basics
+
+When you are done creating your entry, just click "Commit New File". You can look at a preview of your file and go back and edit your file later.
+
+When you're happy with your entry, Paul or Andrew will make it live.
