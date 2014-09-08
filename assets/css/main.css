@@ -425,6 +425,9 @@ h1 > a.title-link {
 }
 .post .date {
     padding: 10px;
+    background-color: #eee;
+    margin-top: -10px;
+    font-size: 0.8em;
 }
 .archive {
     margin-top:20px;
