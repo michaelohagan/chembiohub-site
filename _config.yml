@@ -15,3 +15,7 @@ authors:
     display_name: Andrew Stretton
     email: andrew@chembiohub.ox.ac.uk
     github: strets123
+
+name: Chembio Hub Blog
+description: A team blog about the technology and stories behind the chembio hub project
+url: http://chembiohub.ox.ac.uk/blog/
