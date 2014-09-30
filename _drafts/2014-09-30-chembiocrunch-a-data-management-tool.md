@@ -23,7 +23,15 @@ Issues that arise from this approach include:
 - Duplication of effort between scientists and groups
 - Mixing of data and processing logic makes output hard to understand
 
-**As we believe that there must be a better way ChemBio Crunch was born**
+**As we believe that there must be a better way - ChemBio Crunch was born**
+There are 4 simple steps to use ChemBio Crunch
+1. Upload raw data files
+2. Validate plate signals and remove outlier wells
+3. Calculate IC50, hill slope and relevant errors
+4. Export as XLSX, png or PPT
 
-ChemBio Crunch takes a set of raw data files as an input and allows the scientist to validate the assay result 
+
+
+
+
 
