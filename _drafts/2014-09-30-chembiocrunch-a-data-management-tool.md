@@ -30,7 +30,7 @@ There are 4 simple steps to use ChemBio Crunch
 3. Calculate IC50, hill slope and relevant errors
 4. Export as XLSX, png or PPT
 
-
+Results can then be compared using the publication-ready charting features of ChemBio Crunch
 
 
 
