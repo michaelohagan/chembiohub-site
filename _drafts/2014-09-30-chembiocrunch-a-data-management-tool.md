@@ -25,13 +25,11 @@ Issues that arise from this approach include:
 
 **As we believe that there must be a better way - ChemBio Crunch was born**
 There are 4 simple steps to use ChemBio Crunch
-1. Upload raw data files
+1. Upload raw data files via a custom web form for your machine
 2. Validate plate signals and remove outlier wells
 3. Calculate IC50, hill slope and relevant errors
 4. Export as XLSX, png or PPT
 
 Results can then be compared using the publication-ready charting features of ChemBio Crunch
 
-
-
-
+**New file formats are easy to support! Let us know about your data processing issues**
