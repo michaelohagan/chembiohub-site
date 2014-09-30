@@ -24,6 +24,7 @@ Issues that arise from this approach include:
 - Mixing of data and processing logic makes output hard to understand
 
 **As we believe that there must be a better way - ChemBio Crunch was born**
+
 There are 4 simple steps to use ChemBio Crunch
 1. Upload raw data files via a custom web form for your machine
 2. Validate plate signals and remove outlier wells
