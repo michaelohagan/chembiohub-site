@@ -11,8 +11,19 @@ The eventual goals of the ChemBio Hub project include enabling bench scientists 
 One frequent challenge we encountered when talking to scientists is summarised in this diagram:
 
 Data is copied and pasted between different tools and Excel templates, calculated results may then be stored in a shared drive, database etc.
+Advantages of this approach include:
+- Familiarity and good documentation for the tools used
+- Low learning curve compared to programming
+- Flexibility, easy to adapt to changes in experimental setup
 
-**Believing that there must be a better way ChemBio Crunch was born**
+Issues that arise from this approach include:
+- Copy and paste errors leading to incorrect data
+- Management of template files in the group can be difficult
+- No consistent output data format
+- Duplication of effort between scientists and groups
+- Mixing of data and processing logic makes output hard to understand
 
+**As we believe that there must be a better way ChemBio Crunch was born**
 
+ChemBio Crunch takes a set of raw data files as an input and allows the scientist to validate the assay result 
 
