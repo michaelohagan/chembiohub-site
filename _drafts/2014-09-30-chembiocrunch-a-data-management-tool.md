@@ -10,3 +10,9 @@ The eventual goals of the ChemBio Hub project include enabling bench scientists 
 
 One frequent challenge we encountered when talking to scientists is summarised in this diagram:
 
+Data is copied and pasted between different tools and Excel templates, calculated results may then be stored in a shared drive, database etc.
+
+**Believing that there must be a better way ChemBio Crunch was born**
+
+
+
