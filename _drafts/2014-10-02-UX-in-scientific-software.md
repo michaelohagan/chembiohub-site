@@ -22,8 +22,9 @@ Firstly, good UX is not simply about adding eye candy or new technology - this c
 
 There are some things that can enhance UX of scientific software.
 - Clear instructions - Having a monolithic help page lifted from a unix man or an entire wiki dedicated to your software application does not mean it is clear how to perform simple tasks, leading to frustrated users. Contextual help, simple paragraphs at the start of sections, small help snippets for individual form fields casn all help explain how to use your software and minimise frustration.
-- Example datasets - 
-- Better charting engines - lots of options here such as D3 that can create interactive charts, narrow down data and display datasets in different ways.
+- Example datasets - Having your users know exactly what the system will and will not handle in terms of data formats and files can also contribute towards a good user experience. A good way to dao this is to have example dummy data
+- Better charting engines - lots of options here such as D3.js that can create interactive charts, narrow down data and display datasets in different ways. You can often also write your own plugins and charts for these if the functionality or chart formats do not exist.
+- Helpful erroring - at some point a user will try and enter terrible or corrupted data or put it in the wrong field.
 
 **What makes bad UX for scientific software?**
 Conversely, simply saying that command line software, like a lot of bioinformatics tools, does not have good UX is not correct. The fact that such software continues to be used and preferred by many scientific researchers speaks volumes - they find the user experience good enough to provide them with the data they need.
