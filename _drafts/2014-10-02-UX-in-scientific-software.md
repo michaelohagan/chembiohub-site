@@ -17,6 +17,13 @@ The idea is to list personas next to high level ideas and functionality, epics a
 
 Attending this talk was useful in forcing us to think about how UX was important in the work we do. For myself in particular, it made me think about UX in scientific software.
 
+**What makes bad UX for scientific software?**
+Simply saying that command line software, like a lot of bioinformatics tools, does not have good UX is not correct. The fact that such software continues to be used and preferred by many scientific researchers speaks volumes - they find the user experience good enough to provide them with the data they need. There is a danger in confusing user interface with user experience
+
+A lot of problems for web based scientific software come from trying to directly replicate the command line experience aand options in a web form - dropdowns and checklists everywhere. The functionality is the same but the user experience is not.
+
+An assumption that users of the software are experienced in using scientific software is also a pitfall of scientific web based software.
+
 **What makes good UX for scientific software?**
 Firstly, good UX is not simply about adding eye candy or new technology - this can help but is not the be all and end all. There has to be a good reason for adding something like this.
 
@@ -26,8 +33,3 @@ There are some things that can enhance UX of scientific software.
 - Better charting engines - lots of options here such as D3.js that can create interactive charts, narrow down data and display datasets in different ways. You can often also write your own plugins and charts for these if the functionality or chart formats do not exist.
 - Helpful erroring - at some point a user will try and enter terrible or corrupted data or put files in the wrong field. Mysterious 404 error pages or stack traces are not the correct way to handle this of course. Having the system helpfully suggest the action to take to correct this, with an explanation why the data is bad may help the user experience.
 - Presets and profiles - scientific software often has a lot of different options for data parameters, which can take a while for the user to tweak and configure. Having a system which has sets of sensible defaults for commonly used settings for the tool can speed up the process for the user and enhance the user experience. 
-
-**What makes bad UX for scientific software?**
-Conversely, simply saying that command line software, like a lot of bioinformatics tools, does not have good UX is not correct. The fact that such software continues to be used and preferred by many scientific researchers speaks volumes - they find the user experience good enough to provide them with the data they need.
-
-A lot of problems for web based scientific software come from trying to directly replicate the command line experience aand options in a web form - dropdowns and checklists everywhere. The functionality is the same but the user experience is not
