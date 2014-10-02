@@ -1,7 +1,5 @@
 ---
-title: ChemBio Crunch: A simple tool to analyse and manipulate ChemBio assay data
-author: karen
-layout: post
+published: false
 ---
 
 ## ChemBio Crunch: A simple tool to analyse and manipulate ChemBio assay data
@@ -33,7 +31,3 @@ There are 4 simple steps to use ChemBio Crunch
 4. Export as XLSX, png or PPT
 
 Results can then be compared using the publication-ready charting features of ChemBio Crunch
-
-
-
-
