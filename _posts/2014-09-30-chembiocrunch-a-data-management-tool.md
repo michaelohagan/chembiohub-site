@@ -1,5 +1,5 @@
 ---
-title:ChemBio Crunch: A simple tool to analyse and manipulate ChemBio assay data
+title:ChemBio Crunch - A simple tool to analyse and manipulate ChemBio assay data
 author:karen
 layout:post
 ---
