@@ -90,6 +90,3 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 .iconb-hexagons:before {
 	content: "\e800"
 }
-
-@font-face { font-family: NexaBold; src: url('../fonts/Nexa Bold.otf'); } 
-@font-face { font-family: NexaLight; src: url('../fonts/Nexa Light.otf'); }
