@@ -2,7 +2,7 @@
 	<h3>All posts</h3>
 	<ul id="archive">
 	{% for post in site.posts %}
-		<li><a href="{{ site.baseurl }}{{ post.url | remove_first:'/' }}">{{ post.title }}</a><br/><abbr>{{ post.date | date_to_string }}</abbr></li>
+		<li><a href="{{ site.url }}{{ post.url | remove_first:'/' }}">{{ post.title }}</a><br/><abbr>{{ post.date | date_to_string }}</abbr></li>
 	{% endfor %}
 	</ul>
 </div>
