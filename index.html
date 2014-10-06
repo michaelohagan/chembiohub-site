@@ -1,13 +1,570 @@
 ---
-layout: main
-title: Chembiohub Blog
+layout: website
+title: ChemBio Hub
 ---
-{% include intro-para.html %}
-{% for post in site.posts %}
-{% assign author = site.authors[post.author] %}
-<div class='post'>
-	<h1><a class="title-link" href='{{ site.url }}{{ post.url }}'>{{post.title}}</a></h1>
-	<div class='date'>posted {{post.date | date_to_string}} by <a href="mailto:{{author.email}}">{{author.display_name}}</a></div>
-	<div class='body'>{{ post.content }}</div>
-</div>
-{% endfor %}
+
+<div class="container">
+
+
+	<div class="row" id="intro-row">
+
+
+		<div class="col-xs-22">
+			<h1 class="intro blue">Supporting world class<br/>chemical biology research.</h1>
+		</div>
+
+
+		<div class="col-md-12">
+			<!-- circles in here -->
+			<div class="row mt centered">
+
+				<div class="col-sm-3 entry-point">
+					<a href="#capabilities">
+						<div class="row hidden-xs">
+							<div class="img-circle blue-bg capabilities">
+								<span class="img-helper"></span>
+								<img src="{{ site.url }}assets/img/microscope.png" />
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<h2 class="blue">Capabilities</h2>
+								<p class="nexa blue">"I need to find a piece of equipment to help with my work"</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-sm-3 entry-point">
+					<a href="#people">
+						<div class="row hidden-xs">
+							<div class="img-circle blue-bg people">
+								<span class="img-helper"></span>
+								<img src="{{ site.url }}assets/img/speech.png" />
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<h2 class="blue">People</h2>
+								<p class="nexa blue">"I am looking for expert advice or a new collaborator"</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-sm-3 entry-point">
+					<a href="#data">
+						<div class="row hidden-xs">
+							<div class="img-circle blue-bg data">
+								<span class="img-helper"></span>
+								<img src="{{ site.url }}assets/img/benzene.png" />
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<h2 class="blue">Data</h2>
+								<p class="nexa blue">"I have data that I need to process or share with others"</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-sm-3 entry-point extra-div">
+					<a href="http://chembiohub.ox.ac.uk/symposium.html">
+						<div class="row hidden-xs">
+							<div class="img-circle blue-bg extra">
+								<span class="date-month">Nov</span>
+								<span class="date-number">10</span>
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<a href="http://chembiohub.ox.ac.uk/symposium.html">
+									<h2 class="blue">Symposium</h2>
+									<p class="nexa blue">Chemical biology across the University of Oxford</p>
+								</a>
+							</div>
+						</div>
+					</a>
+				</div>   
+
+			</div>
+
+			<div class="row mt centered">
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+	<!-- Functional content goes here -->
+	<a id="capabilities"></a>
+	<div class="row subheading">
+		<div class="col-xs-12">
+			<h2 class="no-bottom-margin">Capabilities - I need to find a piece of equipment to help with my work</h2>
+		</div>
+	</div>
+	<div class="row functional" id="capabilities">
+		<div class="col-xs-12">
+			
+			<div class="row">
+				<h2>Useful ChemBio Equipment Categories</h2>
+
+				<div class="col-sm-8 row centered">
+					<!-- <h2>Find equipment</h2>
+					<p></p>
+					<div class="input-group">
+					  <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+					  <input type="text" class="form-control" placeholder="Username">
+					</div> -->
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/other/biobank/">Biobank</a>
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/biomolecular-interaction-analysis/">Biomolecular Interaction Analysis</a> 
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/gas-liquid-analysis/biochemical-analysis/">Biochemical Analysis</a> 
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/cell-nucleic-acid-protein-analysis/">Cell / Nucleic Acid / Protein Analysis</a> 
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/cell-preparation/">Cell Preparation</a> 
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/cell-based-assays/">Cell-based assays</a> 
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/chromatography/">Chromatography</a>
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/other/fermentation/">Fermentation</a>
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/other/freeze-drying/">Freeze Drying</a> 
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/gas-liquid-chromatography-mass-spectrometry/">GC-MS / LC-MS</a> 
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/sample-analysis/hplc/">HPLC</a>
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/genetic-techniques/">Genetic Techniques</a> 
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/imaging/">Imaging</a>
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/liquid-sample-handling/">Liquid / Sample Handling</a> 
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/microarrays/">Microarrays</a>
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/other/microwave-synthesis/">Microwave Synthesis</a> 
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/sample-analysis/nmr/">NMR</a>
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/other/protein-preparation/">Protein Preparation</a> 
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/other/peptide-synthesis/">Peptide Synthesis</a> 
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/plate-reader/">Plate Reader</a> 
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/qpcr/">qPCR</a>
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/sample-prep/">Sample Prep</a> 
+					<a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/spectroscopy/">Spectroscopy</a>
+
+				</div>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<h2>Submit Equipment</h2>
+						<p>Do you have equipment that will help other chemical biologists?</p>
+						<a href="https://www.research-facilities.ox.ac.uk/contribute/" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-import"></span> Submit details to the University database</a>
+					</div>
+					<div class="form-group">
+						<h2>Can't find what you're looking for?</h2>
+						<p>Tell us what you need and we may be able to facilitate this</p>
+						<textarea class="form-control"  rows="5"></textarea><!--placeholder="For example, [sample question]"-->
+						<button class="btn btn-success btn-block top-margin">Submit via Webauth</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a id="people"></a>
+	<div class="row subheading">
+		<div class="col-xs-12">
+			<h2 class="no-bottom-margin">People - I am looking for expert advice or a new collaborator</h2>
+		</div>
+	</div>
+	<div class="row functional" id="people">
+		<div class="col-xs-12">
+			
+			<div class="row">
+				<div class="col-sm-8">
+						<h2>18 scientists are benefiting from ChemBio Hub</h2>
+						<div class="row ppl">
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Angela_Russell_Chem.png" data-name="Angela Russell" data-dept="Oncology" data-weblink="http://www.pharm.ox.ac.uk/research/angela-russell" class="ppl-thumb"> 
+								<div class="contenthover">
+								    <p><a href="http://www.pharm.ox.ac.uk/research/angela-russell">Angela Russell</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Benedikt_Kessler_TDI.png" data-name="Benedikt Kessler" data-dept="TDI" data-weblink="http://www.ndm.ox.ac.uk/principal-investigators/researcher/benedikt-kessler" class="ppl-thumb ">
+								<div class="contenthover">
+								    <p><a href="http://www.ndm.ox.ac.uk/principal-investigators/researcher/benedikt-kessler">Benedikt Kessler</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Brian_Marsden_SGC.png" data-name="Brian Marsden" data-dept="SGC" data-weblink="http://www.ndm.ox.ac.uk/principal-investigators/researcher/brian-marsden" class="ppl-thumb ">
+								<div class="contenthover">
+								    <p><a href="http://www.ndm.ox.ac.uk/principal-investigators/researcher/brian-marsden">Brian Marsden</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Chas_Bountra_SGC.png" data-name="Chas Bountra" data-dept="SGC" data-weblink="http://www.ndm.ox.ac.uk/principal-investigators/researcher/chas-bountra" class="ppl-thumb">
+								<div class="contenthover">
+								    <p><a href="http://www.ndm.ox.ac.uk/principal-investigators/researcher/chas-bountra">Chas Bountra</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Chris_Schofield_Chem.png" data-name="Chris Schofield" data-dept="Chemistry" data-weblink="http://www.chem.ox.ac.uk/oc/cjschofield/" class="ppl-thumb ">
+								<div class="contenthover">
+								    <p><a href="http://www.chem.ox.ac.uk/oc/cjschofield/">Chris Schofield</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Daniel_Ebner_TDI.png" data-name="Daniel Ebner" data-dept="TDI" data-weblink="http://www.tdi.ox.ac.uk/staff" class="ppl-thumb ">
+								<div class="contenthover">
+								    <p><a href="http://www.tdi.ox.ac.uk/staff">Daniel Ebner</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="row  ppl">
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Geoff_Higgins_Oncology.png" data-name="Geoff Higgins" data-dept="Oncology" data-weblink="http://www.oncology.ox.ac.uk/research/geoff-higgins-1" class="ppl-thumb">
+								<div class="contenthover">
+								    <p><a href="http://www.oncology.ox.ac.uk/research/geoff-higgins-1">Geoff Higgins</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Grigory_Dianov_Oncology.png" data-name="Grigory Dianov" data-dept="Oncology" data-weblink="http://www.oncology.ox.ac.uk/research/grigory-dianov/" class="ppl-thumb">
+								<div class="contenthover">
+								    <p><a href="http://www.oncology.ox.ac.uk/research/grigory-dianov/">Grigory Dianov</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Karen_Porter_CBH.png" data-name="Karen Porter" data-dept="ChemBio Hub" data-weblink="http://chembiohub.ox.ac.uk/" class="ppl-thumb ">
+								<div class="contenthover">
+								    <p><a href="http://chembiohub.ox.ac.uk/">Karen Porter</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Kay_Davies_DPAG.png" data-name="Kay Davies" data-dept="DPAG" data-weblink="http://www.dpag.ox.ac.uk/team/group-leaders/kay-davies" class="ppl-thumb ">
+								<div class="contenthover">
+								    <p><a href="http://www.dpag.ox.ac.uk/team/group-leaders/kay-davies">Kay Davies</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Nicole_Zitzmann_Biochem.png" data-name="Nicole Zitzmann" data-dept="Biochemistry" data-weblink="http://www.bioch.ox.ac.uk/aspsite/index.asp?pageid=608" class="ppl-thumb">
+								<div class="contenthover">
+								    <p><a href="http://www.bioch.ox.ac.uk/aspsite/index.asp?pageid=608">Nicole Zitzmann</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Paul_brennan_SGC.png" data-name="Paul Brennan" data-dept="SGC" data-weblink="http://www.ndm.ox.ac.uk/principal-investigators/researcher/paul-brennan" class="ppl-thumb">
+								<div class="contenthover">
+								    <p><a href="http://www.ndm.ox.ac.uk/principal-investigators/researcher/paul-brennan">Paul Brennan</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="row ppl">
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Richard_Wade_Martins_DPAG.png" data-name="Richard Wade Martins" data-dept="DPAG" data-weblink="http://www.dpag.ox.ac.uk/research/wade-martins-group" class="ppl-thumb"><div class="contenthover">
+								    <p><a href="http://www.dpag.ox.ac.uk/research/wade-martins-group">Richard Wade Martins</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Stefan_Knapp_TDI.png" data-name="Stefan Knapp" data-dept="TDI" data-weblink="http://www.ndm.ox.ac.uk/principal-investigators/researcher/stefan-knapp" class="ppl-thumb"><div class="contenthover">
+								    <p><a href="http://www.ndm.ox.ac.uk/principal-investigators/researcher/stefan-knapp">Stefan Knapp</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Stuart_Conway_Chem.png" data-name="Stuart Conway" data-dept="Chemistry" data-weblink="http://research.chem.ox.ac.uk/stuart-conway.aspx" class="ppl-thumb"><div class="contenthover">
+								    <p><a href="http://research.chem.ox.ac.uk/stuart-conway.aspx">Stuart Conway</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Susanne_Muller_Knapp_SGC.png" data-name="Susanne Muller Knapp" data-dept="SGC" data-weblink="http://www.ndm.ox.ac.uk/principal-investigators/researcher/susanne-muller-knapp" class="ppl-thumb"><div class="contenthover">
+								    <p><a href="http://www.ndm.ox.ac.uk/principal-investigators/researcher/susanne-muller-knapp">Susanne Muller Knapp</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Tom_Brown_Oncology.png" data-name="Tom Brown" data-dept="Oncology" data-weblink="http://www.oncology.ox.ac.uk/research/professor-tom-brown" class="ppl-thumb"><div class="contenthover">
+								    <p><a href="http://www.oncology.ox.ac.uk/research/professor-tom-brown">Tom Brown</a></p>
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<img src="{{ site.url }}assets/img/people/Tom_Milne_WIMM.png" data-name="Tom Milne" data-dept="WIMM" data-weblink="http://www.imm.ox.ac.uk/thomas-milne" class="ppl-thumb"><div class="contenthover">
+								    <p><a href="http://www.imm.ox.ac.uk/thomas-milne">Tom Milne</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="hidden" id="ppl-overlay">
+							<span id="ppl-name">Name</span>
+							<span id="ppl-dept">Dept</span>
+						</div>
+					<!-- <div class="row">
+						<div class="col-xs-3">
+							<div id="ppl-image">
+							</div>
+						</div>
+						<div class="col-xs-9">
+							<div class="row">
+								<div ></div>
+							</div>
+							<div class="row">
+								<div id="ppl-dept"></div>
+							</div>
+						</div>
+					</div>
+				-->
+				</div>
+				<div class="col-sm-4">
+					<form role="form">
+						<div class="form-group">
+							<h2>Can't find who you're looking for?</h2>
+							<p>Let other users find you by registering your details with ChemBio Hub</p>
+							<textarea class="form-control"  rows="5"></textarea><!-- placeholder="For example, [sample question]"-->
+							<label class="white" for="contact-image">Optional Image</label>
+							<input type="file" class="form-control" id="contact-image" name="contact-image"></input>
+							<!-- <label class="white" for="contact-struc">Optional Chemical Structure (SD format)</label>
+							<input type="file" class="form-control" id="contact-struc" name="contact-struc"></input> -->
+							<button class="btn btn-success btn-block top-margin">Submit via Webauth</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a id="data"></a>
+	<div class="row subheading">
+		<div class="col-xs-12">
+			<h2 class="no-bottom-margin">Data - I have data that I need to process or share with others</h2>
+		</div>
+	</div>
+	<div class="row functional" id="data">
+		<div class="col-xs-12">
+			<div class="row">
+				<h2>Use our ChemBio Crunch tool to process your data.</h2>
+
+			</div>
+			<div class="row centered">
+				<div class="col-sm-8">
+					<iframe src="//www.slideshare.net/slideshow/embed_code/39713029" width="100%" height="582" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> 
+
+					<!-- Carousel currently hidden-->
+					<div id="carousel-crunch" style="display:none" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators fp">
+					    <li data-target="#carousel-crunch" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-crunch" data-slide-to="1"></li>
+					    <li data-target="#carousel-crunch" data-slide-to="2"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+					    <div class="item active">
+					      <img src="{{ site.url }}assets/img/fp-carousel/landing.png" alt="ChemBio Crunch">
+					      <div class="carousel-caption"></div>
+					    </div>
+					    <div class="item">
+					      <img src="{{ site.url }}assets/img/fp-carousel/heatmap.png" alt="ChemBio Crunch">
+					      <div class="carousel-caption"></div>
+					    </div>
+					    <div class="item">
+					      <img src="{{ site.url }}assets/img/fp-carousel/ic50.png" alt="ChemBio Crunch">
+					      <div class="carousel-caption"></div>
+					    </div>
+					  </div>
+
+					  <!-- Controls -->
+					  <a class="left carousel-control fp" href="#carousel-crunch" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left"></span>
+					  </a>
+					  <a class="right carousel-control fp" href="#carousel-crunch" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right"></span>
+					  </a>
+					</div>
+
+					<div>
+						<!-- <p class="top-margin">Crunch turns your assay readouts into slick visualisations in seconds.</p> -->
+						<button class="btn btn-primary btn-block">Show me ChemBio Crunch</button>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<p>Do you need more from ChemBio Crunch? Tell us your idea and we will work with you to make this happen.</p>
+						<textarea class="form-control" rows="5"></textarea>
+						<button class="btn btn-success btn-block top-margin">Submit via Webauth</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	
+	<div class="row mt centered">
+
+
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<h3 class="subheading">
+				Why ChemBioHub?
+			</h3>
+			<div class="col-ld-12 testimonial" >
+				<div>
+					<img class="floatwrap img-circle" src="http://chembiohub.ox.ac.uk/static/img/chris_scofield.png " alt="" title="Professor Chris Schofield" ></img>
+					<p class="blue testimonial">"ChemBioHub will enable researchers to share knowledge, expertise, reagents and data, reducing inefficiency and missed opportunities. I’m convinced that this platform will become a key tool used across the University and beyond."</p>
+				</div>
+				<p class="blue text-right attribution"><span class="source-name">Professor Chris Schofield</span><br/>Head of Organic Chemistry<br/> University of Oxford</p>
+			</div>
+		
+			<div class="col-ld-12 testimonial" >
+				<div>
+					<img class="floatwrap img-circle" src="http://chembiohub.ox.ac.uk/static/img/alisdair_buchan.png " alt="" title="Professor Alistair Buchan" ></img>
+					<p class="blue testimonial">"ChemBioHub will provide tools to support close collaboration among more than 20 departments. It will showcase the University’s world-class chemical biology capabilities and science both to academics and industry around the world."
+					</p>
+				</div>
+
+				<p class="blue text-right attribution"><span class="source-name">Professor Alistair Buchan</span><br/>Head of Medical Sciences Division<br/> University of Oxford</p>
+			</div>
+		</div>	
+
+
+
+		<div class="col-md-4 col-sm-6 hidden-xs">
+			<h3 class="subheading">
+ 				Twitter
+ 			</h3>
+			<a class="twitter-timeline" href="https://twitter.com/oxchembiohub" data-widget-id="515124962516930560">Tweets by @oxchembiohub</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+
+
+
+
+		<div class="col-md-4 col-sm-6 hidden-xs">
+			<h3 class="subheading">
+ 				ChemBio Q & A forum
+ 		</h3>
+			<div id="forum-widget" ></div>	
+		</div>			
+		<div class="col-md-4 col-sm-6 hidden-xs">
+			<h3 class="subheading">
+ 				Our code on Github
+ 		</h3>
+			<div class="github-widget" data-repo="thesgc/chembiocrunch"></div>	
+			<div class="github-widget" data-repo="thesgc/raw"></div>	
+			<div class="github-widget" data-repo="thesgc/chembiohub-site"></div>	
+		</div>		
+		<div class="col-md-4 col-sm-6 hidden-xs">
+			<h3 class="subheading">
+ 				Our Project Blog
+ 		</h3>
+			<div id="blog-widget" ></div>	
+		</div>
+
+		<div class="col-md-4 col-sm-6 hidden-xs">
+			<h3 class="subheading">
+ 				Google+
+ 			</h3>
+			<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+			<g:page href="https://plus.google.com/106725711668905271458"></g:page>
+			<!--Place the code below where you want the widget to render-->
+<!--
+<div id="gpluswidget" data-id="106725711668905271458" data-key="AIzaSyCTCYwVao2FYbLkhnGy71uSWtJbCPdG8WM" data-posts="7" data-lang="yes" data-width="290" data-bkg="transparent" data-padding="10" data-border="f5f5f5" data-radius="0" data-txt="0c0c0c" data-link="36c" data-favicon="yes" data-header="yes" data-footer="yes" data-page=""></div>
+<script type="text/javascript" src="http://gplusapi.googlecode.com/files/widget0.js"></script>
+-->
+		</div>
+
+		
+	</div>
+
+
+
+
+	<div class="row centered">
+			<h3 class="subheading">Our Team.</h3>
+	</div><!-- /row -->
+
+	<div class="row centered group-photo">
+		<img class="max-image" src="{{ site.url }}assets/img/cbh-group-photo.jpg">
+	</div>
+<div class="col-md-2 col-xs-2  centered">
+	<h3 class="blue">Michael O'Hagan<br>
+	<small>Knowledge Exchange Coordinator</small>
+</h3>
+<!-- 				<p><span class="glyphicon glyphicon-send"></i> <span class="glyphicon glyphicon-phone"></i> <span class="glyphicon glyphicon-globe"></i></p>
+-->			</div><!--/col-lg-3 -->
+<div class="col-md-2 col-xs-2 centered">
+	<h3 class="blue">Paul Barrett<br>
+	<small>Developer</small></h4>
+<!-- 				<p><span class="glyphicon glyphicon-send"></i> <span class="glyphicon glyphicon-phone"></i> <span class="glyphicon glyphicon-globe"></i></p>
+-->			</div><!--/col-lg-3 -->
+<div class="col-md-2 col-xs-2  centered">
+	<h3 class="blue">Karen Porter<br>
+	<small>Project Manager.</small></h3>
+<!-- 				<p><span class="glyphicon glyphicon-send"></i> <span class="glyphicon glyphicon-phone"></i> <span class="glyphicon glyphicon-globe"></i></p>
+-->			</div><!--/col-lg-3 -->
+
+		<div class="col-md-3 col-xs-3  centered">
+			<h3 class="blue">Dr. Brian Marsden<br>
+			<small>Principal Investigator: Research Informatics</small>
+			</h3>
+			
+
+<!-- 				<p><span class="glyphicon glyphicon-send"></i> <span class="glyphicon glyphicon-phone"></i> <span class="glyphicon glyphicon-globe"></i></p>
+-->		</div><!--/col-lg-3 -->
+
+<div class="col-md-2 col-xs-2 centered">
+	<h3 class="blue">Andy Stretton<br>
+	<small>Developer</small>
+<!-- 				<p><span class="glyphicon glyphicon-send"></i> <span class="glyphicon glyphicon-phone"></i> <span class="glyphicon glyphicon-globe"></i></p>
+-->			</div><!--/col-lg-3 -->
+
+</div><!-- /container -->
+
+<div class="container">
+<!--
+		<p class="centered">Created by BlackTie.co - Attribution License 3.0 - 2013</p>
+	-->
+</div><!-- /container -->
+
+
+    <script type="text/javascript" src="{{ site.url }}assets/js/vendorjs/jquery.contenthover.min.js"></script>
+
+<script type="text/javascript" src="{{ site.url }}assets/js/vendorjs/jquery.githubRepoWidget.min.js"></script>	
+
+
+    <script type="text/javascript" src="{{ site.url }}assets/js/vendorjs/FeedEk.js"></script> 
+
+<script>
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+
+$('#blog-widget').FeedEk({
+    FeedUrl : 'https://chembiohub.ox.ac.uk/blog/feed.xml',
+  MaxCount : 3,
+    ShowDesc : true,
+    ShowPubDate:true,
+    DescCharacterLimit:300,
+    TitleLinkTarget:'_blank'
+  });
+
+$('#forum-widget').FeedEk({
+    FeedUrl : 'http://chembiohub.ox.ac.uk/askbot/feeds/rss/',
+  MaxCount : 5,
+    ShowDesc : true,
+    ShowPubDate:true,
+    DescCharacterLimit:100,
+    TitleLinkTarget:'_blank'
+  });
+
+$('.ppl-thumb').contenthover({
+    overlay_background:'#000',
+    overlay_opacity:0.8
+});
+
+
+</script>
