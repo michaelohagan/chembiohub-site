@@ -14,7 +14,7 @@ $('a[href*=#]:not([href=#])').click(function() {
 });
 
 $('#blog-widget').FeedEk({
-    FeedUrl : 'https://chembiohub.ox.ac.uk/blog/feed.xml',
+    FeedUrl : '//chembiohub.ox.ac.uk/feed.xml',
   MaxCount : 3,
     ShowDesc : true,
     ShowPubDate:true,
@@ -23,7 +23,7 @@ $('#blog-widget').FeedEk({
   });
 
 $('#forum-widget').FeedEk({
-    FeedUrl : 'http://chembiohub.ox.ac.uk/askbot/feeds/rss/',
+    FeedUrl : '//chembiohub.ox.ac.uk/askbot/feeds/rss/',
   MaxCount : 5,
     ShowDesc : true,
     ShowPubDate:true,
