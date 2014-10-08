@@ -111,15 +111,16 @@ title: ChemBio Hub
 		<div class="col-xs-12">
 			
 			<div class="row">
-				<h2>Useful ChemBio Equipment Categories</h2>
 
-				<div class="col-sm-8 row centered">
-					<!-- <h2>Find equipment</h2>
-					<p></p>
-					<div class="input-group">
-					  <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
-					  <input type="text" class="form-control" placeholder="Username">
-					</div> -->
+				<div class="col-sm-8 row">
+					<h2>Search our Equipment Database</h2>
+					<div class="form-group input-group">
+				      <input id="equip-search" type="text" class="input-lg form-control">
+				      <span class="input-group-btn">
+				        <button id="equip-search-btn" class="btn-lg btn btn-primary" type="button">Search</button>
+				      </span>
+				    </div>
+				    <h2>Useful ChemBio Equipment Categories</h2>
 					<ul class="research-eq nav-collapse">
 						<li><a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/other/biobank/">Biobank</a></li>
 						<li><a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/login/?next=/browse/biomolecular-interaction-analysis/">Biomolecular Interaction Analysis</a> </li>
@@ -513,50 +514,4 @@ title: ChemBio Hub
 
     <script type="text/javascript" src="{{ site.url }}assets/js/vendorjs/FeedEk.js"></script> 
 
-<script>
-$('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-        || location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-                 scrollTop: target.offset().top
-            }, 1000);
-            return false;
-        }
-    }
-});
-
-$('#blog-widget').FeedEk({
-    FeedUrl : 'https://chembiohub.ox.ac.uk/blog/feed.xml',
-  MaxCount : 3,
-    ShowDesc : true,
-    ShowPubDate:true,
-    DescCharacterLimit:300,
-    TitleLinkTarget:'_blank'
-  });
-
-$('#forum-widget').FeedEk({
-    FeedUrl : 'http://chembiohub.ox.ac.uk/askbot/feeds/rss/',
-  MaxCount : 5,
-    ShowDesc : true,
-    ShowPubDate:true,
-    DescCharacterLimit:100,
-    TitleLinkTarget:'_blank'
-  });
-
-$('.ppl-thumb').contenthover({
-    overlay_background:'#000',
-    overlay_opacity:0.8
-});
-
-vpw = $(window).width();
-vph = $(window).height();
-if($('.functional').height() < vph) {
-	$('.functional').height(vph);	
-}
-
-
-</script>
+<script type="text/javascript" src="{{ site.url }}assets/js/index-functions.js"></script> 
