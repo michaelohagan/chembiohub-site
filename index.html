@@ -451,7 +451,17 @@ title: ChemBio Hub
 			<h3 class="subheading">
  				Our Project Blog
  		</h3>
-			<div id="blog-widget" ></div>	
+			<div id="blog-widget" >
+				{% for post in site.posts %}
+				{% assign author = site.authors[post.author] %}
+					<div class="text-left"><div><a href="{{ site.url }}{{ post.url | remove_first:'/' }}">{{ post.title }}</a><br/>
+						<small><abbr>{{ post.date | date_to_string }}</abbr> by <a href="mailto:{{author.email}}">{{author.display_name}}</a></small></div>
+						<div>
+							{{post.excerpt}}
+						</div>
+					</div>
+				{% endfor %}
+			</div>	
 		</div>
 
 		<div class="col-md-4 col-sm-6 hidden-xs widget">

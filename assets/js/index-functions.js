@@ -12,7 +12,7 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }
 });
-
+/*
 $('#blog-widget').FeedEk({
     FeedUrl : '//chembiohub.ox.ac.uk/feed.xml',
   MaxCount : 3,
@@ -20,7 +20,7 @@ $('#blog-widget').FeedEk({
     ShowPubDate:true,
     DescCharacterLimit:300,
     TitleLinkTarget:'_blank'
-  });
+  });*/
 
 $('#forum-widget').FeedEk({
     FeedUrl : '//chembiohub.ox.ac.uk/askbot/feeds/rss/',
