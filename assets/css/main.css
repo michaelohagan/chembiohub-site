@@ -40,7 +40,7 @@ h4 {
 
 /* Paragraph & Typographic */
 p {
-  line-height: 28px;
+  line-height: 24px;
   margin-bottom: 25px;
   font-size: 16px; }
 
@@ -514,4 +514,28 @@ img.ppl-thumb {
 
 h2.no-bottom-margin {
   margin-bottom:0;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+  p {
+    line-height: 28px; 
+  }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+  
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+
+
 }

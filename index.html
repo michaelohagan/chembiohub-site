@@ -3,7 +3,6 @@ layout: website
 title: ChemBio Hub
 ---
 
-<div class="container">
 
 
 	<div class="row" id="intro-row">
@@ -70,7 +69,7 @@ title: ChemBio Hub
 				</div>
 
 				<div class="col-sm-3 entry-point extra-div">
-					<a href="http://chembiohub.ox.ac.uk/symposium.html">
+					<a href="/symposium">
 						<div class="row hidden-xs">
 							<div class="img-circle blue-bg extra">
 								<span class="date-month">Nov</span>
@@ -79,7 +78,7 @@ title: ChemBio Hub
 						</div>
 						<div class="row">
 							<div>
-								<a href="http://chembiohub.ox.ac.uk/symposium.html">
+								<a href="/symposium">
 									<h2 class="blue">Symposium</h2>
 									<p class="nexa blue">Chemical biology across the University of Oxford</p>
 								</a>
@@ -403,7 +402,7 @@ title: ChemBio Hub
 			</h3>
 			<div class="col-ld-12 testimonial" >
 				<div>
-					<img class="floatwrap img-circle" src="http://chembiohub.ox.ac.uk/static/img/chris_scofield.png " alt="" title="Professor Chris Schofield" ></img>
+					<img class="floatwrap img-circle" src="{{ site.url }}assets/img/chris_scofield.png " alt="" title="Professor Chris Schofield" ></img>
 					<p class="blue testimonial">"ChemBioHub will enable researchers to share knowledge, expertise, reagents and data, reducing inefficiency and missed opportunities. I’m convinced that this platform will become a key tool used across the University and beyond."</p>
 				</div>
 				<p class="blue text-right attribution"><span class="source-name">Professor Chris Schofield</span><br/>Head of Organic Chemistry<br/> University of Oxford</p>
@@ -411,7 +410,7 @@ title: ChemBio Hub
 		
 			<div class="col-ld-12 testimonial" >
 				<div>
-					<img class="floatwrap img-circle" src="http://chembiohub.ox.ac.uk/static/img/alisdair_buchan.png " alt="" title="Professor Alistair Buchan" ></img>
+					<img class="floatwrap img-circle" src="{{ site.url }}assets/img/alisdair_buchan.png " alt="" title="Professor Alistair Buchan" ></img>
 					<p class="blue testimonial">"ChemBioHub will provide tools to support close collaboration among more than 20 departments. It will showcase the University’s world-class chemical biology capabilities and science both to academics and industry around the world."
 					</p>
 				</div>
@@ -504,13 +503,7 @@ title: ChemBio Hub
 		<small>Developer</small>
 	</div><!--/col-lg-3 -->
 
-</div><!-- /container -->
 
-<div class="container">
-<!--
-		<p class="centered">Created by BlackTie.co - Attribution License 3.0 - 2013</p>
-	-->
-</div><!-- /container -->
 
 
     <script type="text/javascript" src="{{ site.url }}assets/js/vendorjs/jquery.contenthover.min.js"></script>
@@ -561,7 +554,9 @@ $('.ppl-thumb').contenthover({
 
 vpw = $(window).width();
 vph = $(window).height();
+if($('.functional').height() < vph) {
+	$('.functional').height(vph);	
+}
 
-$('.functional').height(vph);
 
 </script>
