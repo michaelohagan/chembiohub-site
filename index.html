@@ -305,14 +305,12 @@ title: ChemBio Hub
 				-->
 				</div>
 				<div class="col-sm-4">
-					<form role="form">
-						<div class="form-group">
 							<h2>Can't find who you're looking for?</h2>
 							<p>Let other users find you by registering your details with ChemBio Hub</p>
-							<form id="contact-form">
+							<form id="contact-form" name="contact-form">
 								<div class="form-group">
 									<label class="white control-label" for="contact-email">Email Address</label>
-									<input type="email" class="form-control" id="email" name="email" placeholder="Enter email"></input>
+									<input type="text" class="form-control" id="email" name="email" placeholder="Enter email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9._%+-]+\.ox\.ac\.uk" required></input>
 									<p id="non-oxford-email" class="bg-danger hidden">You must use a 'ox.ac.uk' email address to use this message system. If you are from outside the University, please use the main <a href="/#contact" style="color:white; text-decoration: underline;">Contact email</a></p>
 								</div>
 								<div class="form-group">
@@ -321,19 +319,17 @@ title: ChemBio Hub
 								</div>
 								<div class="form-group">
 									<label class="white" for="contact-email">Message</label>
-									<textarea class="form-control" id="contact-message" name="contact-message" rows="5"></textarea><!-- placeholder="For example, [sample question]"-->
+									<textarea class="form-control" id="contact-message" name="contact-message" rows="5" required></textarea><!-- placeholder="For example, [sample question]"-->
 								</div>
 								<!-- <label class="white" for="contact-image">Optional Image</label>
 								<input type="file" class="form-control" id="contact-image" name="contact-image"></input>
 								<label class="white" for="contact-struc">Optional Chemical Structure (SD format)</label>
 								<input type="file" class="form-control" id="contact-struc" name="contact-struc"></input> -->
 								<input type="hidden" id="subject" name="subject" value="Contact">
-								<button id="contact-submit" role="submit" class="btn btn-success btn-block top-margin">Send Your Message</button>
-								<p id="success-message bg-success" class="hidden">Thanks for your message. The team will be in touch with you shortly.</p>
+								<button id="contact-submit" class="btn btn-success btn-block top-margin">Send Your Message</button>
+								<p id="success-message" class="hidden">Thanks for your message. The team will be in touch with you shortly.</p>
 								<!-- chembiohub.ox.ac.uk/app/... -->
 							</form>
-						</div>
-					</form>
 				</div>
 			</div>
 		</div>
