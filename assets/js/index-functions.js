@@ -57,3 +57,51 @@ function redirect_search(){
 			window.location = "https://www.research-facilities.ox.ac.uk/account/webauth/?next=/search/?q=" + v + "&filter.basedNear.uri=&filter.formalOrganisation.uri=http%3A%2F%2Foxpoints.oucs.ox.ac.uk%2Fid%2F00000000";
 	}
 }
+
+//endswith polyfill - https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
+if (!String.prototype.endsWith) {
+  Object.defineProperty(String.prototype, 'endsWith', {
+    value: function (searchString, position) {
+      var subjectString = this.toString();
+      if (position === undefined || position > subjectString.length) {
+        position = subjectString.length;
+      }
+      position -= searchString.length;
+      var lastIndex = subjectString.indexOf(searchString, position);
+      return lastIndex !== -1 && lastIndex === position;
+    }
+  });
+}
+/** Contact form submission */
+$('#contact-submit').click(function(e){
+  e.preventDefault();
+  //client side email validation
+  $('#non-oxford-email').removeClass("hidden");
+  $('#email').closest('div.form-group').removeClass("has-error");
+  var valid = false;
+  valid = isEmailOx();
+  if (valid) {
+    $.post( "//chembiohub.ox.ac.uk/app/contacts/", $('#contact-form').serialize() )
+    .done(function( data ) {
+      $('#success-message').show();
+    })
+    .fail(function() {
+      $('#success-message').html("There was an error").show();
+    });
+  }
+  else {
+    //highlight email field
+
+    $('#email').closest('div.form-group').addClass("has-error");
+    $('#non-oxford-email').removeClass("hidden");
+
+  }
+});
+
+//we are only accepting direct submissions from Oxford emails at the moment - 
+function isEmailOx() {
+  if ($('#email').val().endsWith('ox.ac.uk')) {
+    return true;
+  }
+  return false;
+}

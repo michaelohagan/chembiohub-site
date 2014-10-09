@@ -309,12 +309,29 @@ title: ChemBio Hub
 						<div class="form-group">
 							<h2>Can't find who you're looking for?</h2>
 							<p>Let other users find you by registering your details with ChemBio Hub</p>
-							<textarea class="form-control"  rows="5"></textarea><!-- placeholder="For example, [sample question]"-->
-							<label class="white" for="contact-image">Optional Image</label>
-							<input type="file" class="form-control" id="contact-image" name="contact-image"></input>
-							<!-- <label class="white" for="contact-struc">Optional Chemical Structure (SD format)</label>
-							<input type="file" class="form-control" id="contact-struc" name="contact-struc"></input> -->
-							<button class="btn btn-success btn-block top-margin">Submit via Webauth</button>
+							<form id="contact-form">
+								<div class="form-group">
+									<label class="white control-label" for="contact-email">Email Address</label>
+									<input type="email" class="form-control" id="email" name="email" placeholder="Enter email"></input>
+									<p id="non-oxford-email" class="bg-danger hidden">You must use a 'ox.ac.uk' email address to use this message system. If you are from outside the University, please use the main <a href="/#contact" style="color:white; text-decoration: underline;">Contact email</a></p>
+								</div>
+								<div class="form-group">
+									<label class="white" for="contact-email">ResearchGate profile link</label>
+									<input type="email" class="form-control" id="researchgate_profile" name="researchgate_profile" placeholder="(Optional)"></input>
+								</div>
+								<div class="form-group">
+									<label class="white" for="contact-email">Message</label>
+									<textarea class="form-control" id="contact-message" name="contact-message" rows="5"></textarea><!-- placeholder="For example, [sample question]"-->
+								</div>
+								<!-- <label class="white" for="contact-image">Optional Image</label>
+								<input type="file" class="form-control" id="contact-image" name="contact-image"></input>
+								<label class="white" for="contact-struc">Optional Chemical Structure (SD format)</label>
+								<input type="file" class="form-control" id="contact-struc" name="contact-struc"></input> -->
+								<input type="hidden" id="subject" name="subject" value="Contact">
+								<button id="contact-submit" role="submit" class="btn btn-success btn-block top-margin">Send Your Message</button>
+								<p id="success-message bg-success" class="hidden">Thanks for your message. The team will be in touch with you shortly.</p>
+								<!-- chembiohub.ox.ac.uk/app/... -->
+							</form>
 						</div>
 					</form>
 				</div>
@@ -452,15 +469,7 @@ title: ChemBio Hub
  				Our Project Blog
  		</h3>
 			<div id="blog-widget" >
-				{% for post in site.posts %}
-				{% assign author = site.authors[post.author] %}
-					<div class="text-left"><div><a href="{{ site.url }}{{ post.url | remove_first:'/' }}">{{ post.title }}</a><br/>
-						<small><abbr>{{ post.date | date_to_string }}</abbr> by <a href="mailto:{{author.email}}">{{author.display_name}}</a></small></div>
-						<div>
-							{{post.excerpt}}
-						</div>
-					</div>
-				{% endfor %}
+				{% include blog-widget.html %}
 			</div>	
 		</div>
 

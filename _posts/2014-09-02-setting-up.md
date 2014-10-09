@@ -3,7 +3,7 @@ title: Setting up the ChemBioHub blog
 author: paul
 layout: post
 ---
-As a part of our commitment to provide quality collaborative tools and outreach to the chemical biology community, we have set up this blog to provide some additional information about how we are creating new tools, helping researchers and enabling collaboration.
+As a part of our commitment to provide quality collaborative tools and outreach to the chemical biology community, we have set up this blog to provide some additional information about how we are creating new tools, helping researchers and enabling collaboration.<!-- more -->
 
 We had a look at a number of options for the technology platform we could use for the blog. It had to be something that was lightweight and also editable by the less-technical members of our group. The big CMS platforms, such as Wordpress and Drupal, provide good WYSIWYG (what you see is what you get) tools for text entry but are too heavyweight and complicated for what we wanted to achieve. Also considered was [Ghost](http://ghost.org), a lightweight blogging platform written in javascript and node.js - while this fulfilled the remit of being lightweight, and allows users to add content via Markdown, it required another hosting solution to be set up and configured.
 
