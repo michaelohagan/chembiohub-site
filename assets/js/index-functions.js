@@ -82,7 +82,7 @@ function redirect_search(){
         'hitType': 'event',
       'eventCategory': 'outbound',
       'eventAction': 'link',
-      'eventLabel': href,
+      'eventLabel': v,
       'hitCallback': loadSearch
 
     });
@@ -91,8 +91,7 @@ function redirect_search(){
  
     // redirect to outbound page
     function loadSearch() {
-      alert("tester");
-      //document.location = 
+      document.location = href;
     }
   }
 }
