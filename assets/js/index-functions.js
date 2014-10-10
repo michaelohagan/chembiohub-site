@@ -27,6 +27,10 @@ $(document).ready(function() {
     alert(valuesToSubmit);
     $.ajax({
       type: "POST",
+      beforeSend: function(xhr) {
+        xhr.setRequestHeader( "Content-type", "application/json" );
+      },
+      crossDomain: true,
       url: $(this).attr('action'),
       data: valuesToSubmit,
       dataType: "json"
