@@ -23,10 +23,12 @@ $(document).ready(function() {
       /*$.post( "//chembiohub.ox.ac.uk/app/contacts/", $('#contact-form').serialize(), function(data) {
         alert(data);
       } );*/
+  var valuesToSubmit = $(this).serialize();
     $.ajax({
       type: "POST",
-      url: "//chembiohub.ox.ac.uk/app/contacts/",
-      data: $('#contact-form').serialize(),
+      url: $(this).attr('action'),,
+      data: valuesToSubmit,
+      dataType: "JSON"
     }).done(function() {
       $('#success-message').show();
     });
