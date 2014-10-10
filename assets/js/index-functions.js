@@ -83,9 +83,16 @@ function redirect_search(){
       'eventCategory': 'search',
       'eventAction': "equip",
       'eventLabel': v,
-      'hitCallback': loadPage
+      'hitCallback': loadSearch
+
     });
-      window.location = "https://www.research-facilities.ox.ac.uk/account/webauth/?next=/search/?q=" + v + "&filter.basedNear.uri=&filter.formalOrganisation.uri=http%3A%2F%2Foxpoints.oucs.ox.ac.uk%2Fid%2F00000000";
+      // redirect after one second if recording takes too long
+    setTimeout(loadSearch, 1000);
+ 
+    // redirect to outbound page
+    function loadSearch() {
+      document.location = "https://www.research-facilities.ox.ac.uk/account/webauth/?next=/search/?q=" + v + "&filter.basedNear.uri=&filter.formalOrganisation.uri=http%3A%2F%2Foxpoints.oucs.ox.ac.uk%2Fid%2F00000000";
+    }
   }
 }
 
