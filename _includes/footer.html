@@ -100,7 +100,6 @@ ga('create','UA-55063522-1');ga('send','pageview');
     // abandon if no active link or link within domain
     var link = $(e.target).closest("a");
     if (link.length != 1 || baseURI == link[0].host) return;
-   alert("test");
 
     // cancel event and record outbound link
     e.preventDefault();
