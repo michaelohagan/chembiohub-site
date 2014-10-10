@@ -26,7 +26,7 @@ $(document).ready(function() {
   var valuesToSubmit = $(this).serialize();
     $.ajax({
       type: "POST",
-      url: $(this).attr('action'),,
+      url: $(this).attr('action'),
       data: valuesToSubmit,
       dataType: "JSON"
     }).done(function() {
