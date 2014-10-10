@@ -12,7 +12,30 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }
 });
+$(document).ready(function() {
+  /** Contact form submission */
+  
+  $('#contact-form').on('submit', function(e){
+    //e.preventDefault();
+    //client side email validation
+    //$('#non-oxford-email').removeClass("hidden");
+    //$('#email').closest('div.form-group').removeClass("has-error");
+      /*$.post( "//chembiohub.ox.ac.uk/app/contacts/", $('#contact-form').serialize(), function(data) {
+        alert(data);
+      } );*/
+    $.ajax({
+      type: "POST",
+      url: "//chembiohub.ox.ac.uk/app/contacts/",
+      data: $('#contact-form').serialize(),
+    }).done(function() {
+      $('#success-message').show();
+    });
+    return false;
+  });
 
+});
+
+/*
 $('#blog-widget').FeedEk({
     FeedUrl : '//chembiohub.ox.ac.uk/feed.xml',
   MaxCount : 3,
@@ -20,7 +43,7 @@ $('#blog-widget').FeedEk({
     ShowPubDate:true,
     DescCharacterLimit:300,
     TitleLinkTarget:'_blank'
-  });
+  });*/
 
 $('#forum-widget').FeedEk({
     FeedUrl : '//chembiohub.ox.ac.uk/askbot/feeds/rss/',
@@ -39,7 +62,7 @@ $('.ppl-thumb').contenthover({
 vpw = $(window).width();
 vph = $(window).height();
 if($('.functional').height() < vph) {
-	$('.functional').height(vph);	
+  $('.functional').height(vph); 
 }
 $(window).keypress(function(e) {
     if (e.keyCode == 13) {
@@ -47,13 +70,37 @@ $(window).keypress(function(e) {
     }
 });
 $("#equip-search-btn").click(function(e){
-	e.preventDefault();
-	redirect_search();
+  e.preventDefault();
+  redirect_search();
 });
 
 function redirect_search(){
-	var v = $("input#equip-search").val();
-	if(v){
-			window.location = "https://www.research-facilities.ox.ac.uk/account/webauth/?next=/search/?q=" + v + "&filter.basedNear.uri=&filter.formalOrganisation.uri=http%3A%2F%2Foxpoints.oucs.ox.ac.uk%2Fid%2F00000000";
-	}
+  var v = $("input#equip-search").val();
+  if(v){
+      window.location = "https://www.research-facilities.ox.ac.uk/account/webauth/?next=/search/?q=" + v + "&filter.basedNear.uri=&filter.formalOrganisation.uri=http%3A%2F%2Foxpoints.oucs.ox.ac.uk%2Fid%2F00000000";
+  }
+}
+
+//endswith polyfill - https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
+if (!String.prototype.endsWith) {
+  Object.defineProperty(String.prototype, 'endsWith', {
+    value: function (searchString, position) {
+      var subjectString = this.toString();
+      if (position === undefined || position > subjectString.length) {
+        position = subjectString.length;
+      }
+      position -= searchString.length;
+      var lastIndex = subjectString.indexOf(searchString, position);
+      return lastIndex !== -1 && lastIndex === position;
+    }
+  });
+}
+
+
+//we are only accepting direct submissions from Oxford emails at the moment - 
+function isEmailOx() {
+  if ($('#email').val().endsWith('ox.ac.uk')) {
+    return true;
+  }
+  return false;
 }

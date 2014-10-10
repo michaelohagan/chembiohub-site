@@ -4,7 +4,7 @@ author: andy
 layout: post
 ---
 
-The eventual goals of the ChemBio Hub project include enabling bench scientists to **submit their biological activity data to public databases** and to share it  with specific people. When faced with this challenge an obvious research informatics solution would be to create a data repository and to then address the processes required to get data in there.
+The eventual goals of the ChemBio Hub project include enabling bench scientists to **submit their biological activity data to public databases** and to share it  with specific people.<!-- more --> When faced with this challenge an obvious research informatics solution would be to create a data repository and to then address the processes required to get data in there.
 
 **We decided the needs of the bench scientist had to come first in order to build a community around ChemBio Hub**
 
