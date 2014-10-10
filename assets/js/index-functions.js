@@ -38,7 +38,7 @@ $(document).ready(function() {
     $.ajax({
       type: "POST",
       url: $(this).attr('action'),
-      data: data,
+      data: JSON.stringify(data),
       dataType: "json"
     }).done(function() {
       $('#success-message').show();
