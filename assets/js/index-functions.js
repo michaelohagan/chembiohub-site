@@ -23,22 +23,12 @@ $(document).ready(function() {
       /*$.post( "//chembiohub.ox.ac.uk/app/contacts/", $('#contact-form').serialize(), function(data) {
         alert(data);
       } );*/
-    //var valuesToSubmit = JSON.stringify($(this).serializeObject());
-    var data = {}
-    var Form = this;
-
-    //Gathering the Data
-    //and removing undefined keys(buttons)
-    $.each(this.elements, function(i, v){
-            var input = $(v);
-        data[input.attr("name")] = input.val();
-        delete data["undefined"];
-    });
-    console.log(data);
+    var valuesToSubmit = JSON.stringify($(this).serializeObject());
+    alert(valuesToSubmit);
     $.ajax({
       type: "POST",
       url: $(this).attr('action'),
-      data: JSON.stringify(data),
+      data: valuesToSubmit,
       dataType: "json"
     }).done(function() {
       $('#success-message').show();
