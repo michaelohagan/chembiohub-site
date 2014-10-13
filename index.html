@@ -330,9 +330,11 @@ title: ChemBio Hub
 								<input type="file" class="form-control" id="contact-struc" name="contact-struc"></input> -->
 								<input type="hidden" id="subject" name="subject" value="Contact">
 								<button id="" class="btn btn-success btn-block top-margin">Send Your Message</button>
-								<div class="alert alert-success alert-dismissible hidden" role="alert" id="contact-submit">
-									  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+								<div class="alert alert-success" role="alert" style="display:none;" id="contact-submit-success">
 									  <strong>Thanks for your message!</strong> The team will be in touch with you shortly.
+									</div>
+									<div class="alert alert-error" role="alert" id="contact-submit-error" style="display:none;">
+									  <strong>There has been a problem!</strong> Please try again.
 									</div>
 								<!-- chembiohub.ox.ac.uk/app/... -->
 							</form>

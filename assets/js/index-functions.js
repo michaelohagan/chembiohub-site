@@ -15,11 +15,6 @@ $('a[href*=#]:not([href=#])').click(function() {
 $(document).ready(function() {
   
   $('#contact-form').bootstrapValidator({
-        /*feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },*/
         fields: {
           email: {
                 trigger: 'blur',
@@ -27,6 +22,11 @@ $(document).ready(function() {
             }
         }
     });/** Contact form submission */
+
+  $('.ppl-thumb').contenthover({
+      overlay_background:'#000',
+      overlay_opacity:0.8
+  });
   
   $('#contact-form').on('submit', function(e){
     var valuesToSubmit = JSON.stringify($(this).serializeObject());
@@ -41,12 +41,21 @@ $(document).ready(function() {
       data: valuesToSubmit,
       dataType: "json"
     }).done(function() {
-      $('#success-message').show();
+      $('#contact-submit-success').fadeToggle( "slow", "linear" );
+      createAutoClosingAlert("#contact-submit-success", 4000);
+    }).fail(function() {
+      $('#contact-submit-error').fadeToggle( "slow", "linear" );
+      createAutoClosingAlert("#contact-submit-error", 4000);
     });
     return false;
   });
 
 });
+
+function createAutoClosingAlert(selector, delay) {
+   //var alert = $(selector).alert();
+   window.setTimeout(function() { $(selector).fadeToggle( "slow", "linear" ) }, delay);
+}
 
 /*
 $('#blog-widget').FeedEk({
@@ -67,10 +76,7 @@ $('#blog-widget').FeedEk({
 //     TitleLinkTarget:'_blank'
 //   });
 
-$('.ppl-thumb').contenthover({
-    overlay_background:'#000',
-    overlay_opacity:0.8
-});
+
 
 vpw = $(window).width();
 vph = $(window).height();
