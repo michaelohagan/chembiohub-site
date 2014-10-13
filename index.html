@@ -309,16 +309,19 @@ title: ChemBio Hub
 							<p>Let other users find you by registering your details with ChemBio Hub</p>
 							<form id="contact-form" name="contact-form" action="/app/contacts/">
 								<div class="form-group">
-									<label class="white control-label" for="contact-email">Email Address</label>
-									<input type="text" class="form-control" id="email" name="email" placeholder="Enter email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9._%+-]+\.ox\.ac\.uk" required></input>
-									<p id="non-oxford-email" class="bg-danger hidden">You must use a 'ox.ac.uk' email address to use this message system. If you are from outside the University, please use the main <a href="/#contact" style="color:white; text-decoration: underline;">Contact email</a></p>
+									<label class="control-label" for="contact-email">Email Address</label>
+									<input type="text" class="form-control" id="email" name="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9._%+-]+\.ox\.ac\.uk" data-bv-regexp-message="You must use a 'ox.ac.uk' email address to use this message system. If you are from outside the University, please use the main <a href='/#contact' style='text-decoration: underline;''>Contact email</a>" required></input>
+									<!-- <div class="alert alert-warning alert-dismissible hidden" role="alert" id="non-oxford-email">
+									  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									  <strong>Warning!</strong> You must use a 'ox.ac.uk' email address to use this message system. If you are from outside the University, please use the main <a href="/#contact" style="text-decoration: underline;">Contact email</a>
+									</div> -->
 								</div>
 								<div class="form-group">
-									<label class="white" for="contact-email">ResearchGate profile link</label>
+									<label class="control-label" for="contact-email">ResearchGate profile link</label>
 									<input type="url" class="form-control" id="researchgate_profile" name="researchgate_profile" placeholder="(Optional)"></input>
 								</div>
 								<div class="form-group">
-									<label class="white" for="contact-email">Message</label>
+									<label class="control-label" for="contact-email">Message</label>
 									<textarea class="form-control" id="contact-message" name="message" rows="5" required></textarea><!-- placeholder="For example, [sample question]"-->
 								</div>
 								<!-- <label class="white" for="contact-image">Optional Image</label>
@@ -326,8 +329,11 @@ title: ChemBio Hub
 								<label class="white" for="contact-struc">Optional Chemical Structure (SD format)</label>
 								<input type="file" class="form-control" id="contact-struc" name="contact-struc"></input> -->
 								<input type="hidden" id="subject" name="subject" value="Contact">
-								<button id="contact-submit" class="btn btn-success btn-block top-margin">Send Your Message</button>
-								<p id="success-message" class="hidden">Thanks for your message. The team will be in touch with you shortly.</p>
+								<button id="" class="btn btn-success btn-block top-margin">Send Your Message</button>
+								<div class="alert alert-success alert-dismissible hidden" role="alert" id="contact-submit">
+									  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									  <strong>Thanks for your message!</strong> The team will be in touch with you shortly.
+									</div>
 								<!-- chembiohub.ox.ac.uk/app/... -->
 							</form>
 				</div>

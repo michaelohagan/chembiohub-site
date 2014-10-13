@@ -13,7 +13,20 @@ $('a[href*=#]:not([href=#])').click(function() {
     }
 });
 $(document).ready(function() {
-  /** Contact form submission */
+  
+  $('#contact-form').bootstrapValidator({
+        /*feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },*/
+        fields: {
+          email: {
+                trigger: 'blur',
+                feedbackIcons: 'false'
+            }
+        }
+    });/** Contact form submission */
   
   $('#contact-form').on('submit', function(e){
     var valuesToSubmit = JSON.stringify($(this).serializeObject());
@@ -119,4 +132,3 @@ function isEmailOx() {
   }
   return false;
 }
-
