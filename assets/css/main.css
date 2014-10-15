@@ -515,9 +515,10 @@ img.ppl-thumb {
 h2.no-bottom-margin {
   margin-bottom:0;
 }
-form#contact-form {
+form.contact-form {
   background-color: white;
   padding:10px;
+  border-radius:5px;
 }
 .has-error .help-block{
   background-color: white;

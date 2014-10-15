@@ -112,7 +112,7 @@ title: ChemBio Hub
 			
 			<div class="row">
 
-				<div class="col-sm-8 row">
+				<div class="col-sm-8">
 					<h2>Search our Equipment Database</h2>
 					<div class="form-group input-group">
 				      <input id="equip-search" type="text" class="input-lg form-control">
@@ -156,8 +156,11 @@ title: ChemBio Hub
 					<div class="form-group">
 						<h2>Can't find what you're looking for?</h2>
 						<p>Tell us what you need and we may be able to facilitate this</p>
-						<textarea class="form-control"  rows="5"></textarea><!--placeholder="For example, [sample question]"-->
-						<button class="btn btn-success btn-block top-margin">Submit via Webauth</button>
+
+						{% include contact-form.html subject_value="Equipment request" form_id_slug="equipment" %}
+<!-- 
+						<textarea class="form-control"  rows="5"></textarea>placeholder="For example, [sample question]"
+						<button class="btn btn-success btn-block top-margin">Submit via Webauth</button> -->
 					</div>
 				</div>
 			</div>
@@ -307,43 +310,9 @@ title: ChemBio Hub
 				<div class="col-sm-4">
 							<h2>Can't find who you're looking for?</h2>
 							<p>Let other users find you by registering your details with ChemBio Hub</p>
-							<form id="contact-form" name="contact-form" action="/app/contacts/">
-								<div class="form-group">
-									<label class="control-label" for="contact-email">Email Address</label>
-									<input type="text" class="form-control" id="email" name="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9._%+-]+\.ox\.ac\.uk" data-bv-regexp-message="You must use a 'ox.ac.uk' email address to use this message system. If you are from outside the University, please use the main <a href='/#contact' style='text-decoration: underline;''>Contact email</a>" required></input>
-									<!-- <div class="alert alert-warning alert-dismissible hidden" role="alert" id="non-oxford-email">
-									  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-									  <strong>Warning!</strong> You must use a 'ox.ac.uk' email address to use this message system. If you are from outside the University, please use the main <a href="/#contact" style="text-decoration: underline;">Contact email</a>
-									</div> -->
-								</div>
-								<div class="form-group">
-									<label class="control-label" for="researchgate_profile">ResearchGate profile link</label>
-									<input type="url" class="form-control" id="researchgate_profile" name="researchgate_profile" placeholder="(Optional)"></input>
-								</div>
-								<div class="form-group">
-									<label class="control-label" for="contact-message">Message</label>
-									<textarea class="form-control" id="contact-message" name="message" rows="5" required></textarea><!-- placeholder="For example, [sample question]"-->
-								</div>
-								<div class="form-group">
-									<div class="checkbox">
-										<label for="contact-optin"><input type="checkbox" id="contact-optin" name="optin" /> I would like email updates from ChemBio Hub</label>
-										<!-- placeholder="For example, [sample question]"-->
-									</div>
-								</div>
-								<!-- <label class="white" for="contact-image">Optional Image</label>
-								<input type="file" class="form-control" id="contact-image" name="contact-image"></input>
-								<label class="white" for="contact-struc">Optional Chemical Structure (SD format)</label>
-								<input type="file" class="form-control" id="contact-struc" name="contact-struc"></input> -->
-								<input type="hidden" id="subject" name="subject" value="Contact">
-								<button id="" class="btn btn-success btn-block top-margin">Send Your Message</button>
-								<div class="alert alert-success" role="alert" style="display:none;" id="contact-submit-success">
-									  <strong>Thanks for your message!</strong> The team will be in touch with you shortly.
-									</div>
-									<div class="alert alert-error" role="alert" id="contact-submit-error" style="display:none;">
-									  <strong>There has been a problem!</strong> Please try again.
-									</div>
-								<!-- chembiohub.ox.ac.uk/app/... -->
-							</form>
+
+							{% include contact-form.html subject_value="Contact" form_id_slug="people" %}
+							
 				</div>
 			</div>
 		</div>
@@ -407,8 +376,9 @@ title: ChemBio Hub
 				<div class="col-sm-4">
 					<div class="form-group">
 						<p>Do you need more from ChemBio Crunch? Tell us your idea and we will work with you to make this happen.</p>
-						<textarea class="form-control" rows="5"></textarea>
-						<button class="btn btn-success btn-block top-margin">Submit via Webauth</button>
+						
+						{% include contact-form.html subject_value="ChemBio Crunch feedback" form_id_slug="crunch" %}
+
 					</div>
 				</div>
 			</div>

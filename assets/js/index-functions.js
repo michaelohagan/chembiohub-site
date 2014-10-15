@@ -28,7 +28,7 @@ $(document).ready(function() {
       overlay_opacity:0.8
   });
   
-  $('#contact-form').on('submit', function(e){
+  $('.contact-form').on('submit', function(e){
     var valuesToSubmit = JSON.stringify($(this).serializeObject());
     alert(valuesToSubmit);
     $.ajax({
