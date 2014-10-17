@@ -16,7 +16,7 @@ $('a[href*=#]:not([href=#])').click(function() {
     }
 });
   
-  $('#contact-form').bootstrapValidator({
+  $('.contact-form').bootstrapValidator({
         fields: {
           email: {
                 trigger: 'blur',
@@ -30,7 +30,11 @@ $('a[href*=#]:not([href=#])').click(function() {
       overlay_opacity:0.8
   });*/
   
-  $('.contact-form').on('submit', function(e){
+  $('.contact-form').on('success.form.bv', function(e){
+    //var $form = $(e.target);
+    //var bv = $form.data('bootstrapValidator');
+    e.preventDefault();
+    var form_id = this.id;
     var valuesToSubmit = JSON.stringify($(this).serializeObject());
     alert(valuesToSubmit);
     $.ajax({
@@ -44,19 +48,19 @@ $('a[href*=#]:not([href=#])').click(function() {
       dataType: "json"
     }).done(function() {
       $('#contact-submit-success').fadeToggle( "slow", "linear" );
-      createAutoClosingAlert("#contact-submit-success", 4000);
+      createAutoClosingAlert(form_id,".contact-submit-success", 4000);
     }).fail(function() {
       $('#contact-submit-error').fadeToggle( "slow", "linear" );
-      createAutoClosingAlert("#contact-submit-error", 4000);
+      createAutoClosingAlert(form_id,".contact-submit-error", 4000);
     });
     return false;
   });
 
 });
 
-function createAutoClosingAlert(selector, delay) {
+function createAutoClosingAlert(form_id, selector, delay) {
    //var alert = $(selector).alert();
-   window.setTimeout(function() { $(selector).fadeToggle( "slow", "linear" ) }, delay);
+   window.setTimeout(function() { $('#' + form_id).find(selector).fadeToggle( "slow", "linear" ) }, delay);
 }
 
 vpw = $(window).width();
