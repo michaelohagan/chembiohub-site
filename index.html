@@ -102,25 +102,31 @@ title: ChemBio Hub
 
 	<!-- Functional content goes here -->
 	<a id="capabilities"></a>
-	<div class="row subheading">
+	<div class="row subheading capabilities">
 		<div class="col-xs-12">
-			<h2 class="no-bottom-margin">Capabilities <br/>I need to find a piece of equipment to help with my work</h2>
+			<h2 class="no-bottom-margin">Capabilities</h2>
 		</div>
 	</div>
-	<div class="row functional" id="capabilities">
+	<div class="row subheading">
+		<div class="col-xs-12">
+			<h2 class="no-bottom-margin">I need to find a piece of equipment to help with my work</h2>
+		</div>
+	</div>
+
+	<div class="row functional">
 		<div class="col-xs-12">
 			
 			<div class="row">
 
 				<div class="col-sm-8">
-					<h2>Search our Equipment Database</h2>
+					<h2 class="blue">Search our Equipment Database</h2>
 					<div class="form-group input-group">
 				      <input id="equip-search" type="text" class="input-lg form-control">
 				      <span class="input-group-btn">
 				        <button id="equip-search-btn" class="btn-lg btn btn-primary" type="button">Search</button>
 				      </span>
 				    </div>
-				    <h2>Useful ChemBio Equipment Categories</h2>
+				    <h2 class="blue">Useful ChemBio Equipment Categories</h2>
 					<ul class="research-eq nav-collapse">
 						<li><a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/webauth/?next=/browse/other/biobank/">Biobank</a></li>
 						<li><a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/account/webauth/?next=/browse/biomolecular-interaction-analysis/">Biomolecular Interaction Analysis</a> </li>
@@ -149,13 +155,13 @@ title: ChemBio Hub
 				</div>
 				<div class="col-sm-4">
 					<div class="form-group">
-						<h2>Submit Equipment</h2>
-						<p>Do you have equipment that will help other chemical biologists?</p>
+						<h2 class="blue">Submit Equipment</h2>
+						<p class="blue">Do you have equipment that will help other chemical biologists?</p>
 						<a href="https://www.research-facilities.ox.ac.uk/account/webauth/?next=/contribute/" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-import"></span> Submit details <span class="hidden-xs">to the University database</span></a>
 					</div>
 					<div class="form-group">
-						<h2>Can't find what you're looking for?</h2>
-						<p>Tell us what you need and we may be able to facilitate this</p>
+						<h2 class="blue">Can't find what you're looking for?</h2>
+						<p class="blue">Tell us what you need and we may be able to facilitate this</p>
 
 						{% include contact-form.html subject_value="Equipment request" form_id_slug="equipment" %}
 <!-- 
@@ -168,17 +174,23 @@ title: ChemBio Hub
 	</div>
 
 	<a id="people"></a>
-	<div class="row subheading">
+	<div class="row subheading people">
 		<div class="col-xs-12">
-			<h2 class="no-bottom-margin">People  <br/>I am looking for expert advice or a new collaborator</h2>
+			<h2 class="no-bottom-margin">People</h2>
 		</div>
 	</div>
-	<div class="row functional" id="people">
+	<div class="row subheading">
+		<div class="col-xs-12">
+			<h2 class="no-bottom-margin">I am looking for expert advice or a new collaborator</h2>
+		</div>
+	</div>
+
+	<div class="row functional">
 		<div class="col-xs-12">
 			
 			<div class="row">
 				<div class="col-sm-8">
-						<h2>18 scientists are benefiting from ChemBio Hub</h2>
+						<h2 class="blue">18 scientists are benefiting from ChemBio Hub</h2>
 						<div class="row ppl">
 							<div class="col-xs-2">
 								<img src="/assets/img/people/Angela_Russell_Chem.png" data-name="Angela Russell" data-dept="Oncology" data-weblink="http://www.pharm.ox.ac.uk/research/angela-russell" class="ppl-thumb"> 
@@ -308,7 +320,7 @@ title: ChemBio Hub
 				-->
 				</div>
 				<div class="col-sm-4">
-							<h2>Can't find who you're looking for?</h2>
+							<h2 class="blue">Can't find who you're looking for?</h2>
 							<p>Let other users find you by registering your details with ChemBio Hub</p>
 
 							{% include contact-form.html subject_value="Contact" form_id_slug="people" %}
@@ -319,15 +331,20 @@ title: ChemBio Hub
 	</div>
 
 	<a id="data"></a>
-	<div class="row subheading">
+	<div class="row subheading data">
 		<div class="col-xs-12">
-			<h2 class="no-bottom-margin">Data  <br/>I have data that I need to process or share with others</h2>
+			<h2 class="no-bottom-margin">Data</h2>
 		</div>
 	</div>
-	<div class="row functional" id="data">
+	<div class="row subheading">
+		<div class="col-xs-12">
+			<h2 class="no-bottom-margin">I have data that I need to process or share with others</h2>
+		</div>
+	</div>
+	<div class="row functional" >
 		<div class="col-xs-12">
 			<div class="row">
-				<h2>Use our ChemBio Crunch tool to process your data.</h2>
+				<h2 class="blue">Use our ChemBio Crunch tool to process your data.</h2>
 
 			</div>
 			<div class="row centered">
@@ -375,7 +392,7 @@ title: ChemBio Hub
 				</div>
 				<div class="col-sm-4">
 					<div class="form-group">
-						<p>Do you need more from ChemBio Crunch? Tell us your idea and we will work with you to make this happen.</p>
+						<p class="blue">Do you need more from ChemBio Crunch? Tell us your idea and we will work with you to make this happen.</p>
 						
 						{% include contact-form.html subject_value="ChemBio Crunch feedback" form_id_slug="crunch" %}
 
