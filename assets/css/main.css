@@ -523,6 +523,9 @@ img.ppl-thumb {
 h2.no-bottom-margin {
   margin-bottom:0;
 }
+h2.entry-point{
+  font-size:1.5em;
+}
 form.contact-form {
   background-color: #eee;
   padding:10px;
@@ -534,6 +537,9 @@ form.contact-form {
   border-radius: 5px;
   border: 1px solid #a94442;
 }
+.functional h2 {
+  font-size: 1.2em;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
@@ -541,19 +547,26 @@ form.contact-form {
   p {
     line-height: 28px; 
   }
+  h2.entry-point{
+    font-size:1.6em;
+  }
 
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
-  
+  h2.entry-point{
+    font-size:2em;
+  }
 
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   
-
+  h2.entry-point{
+    font-size:3em;
+  }
 
 }
