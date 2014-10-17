@@ -7,7 +7,7 @@ title: Chembiohub Blog
 {% for post in site.posts %}
 {% assign author = site.authors[post.author] %}
 <div class='post'>
-	<h1><a class="title-link" href='{{ site.url }}{{ post.url }}'>{{post.title}}</a></h1>
+	<h1><a class="title-link" href='{{ post.url }}'>{{post.title}}</a></h1>
 	<div class='date'>posted {{post.date | date_to_string}} by <a href="mailto:{{author.email}}">{{author.display_name}}</a></div>
 	<div class='body'>{{ post.content }}</div>
 </div>
