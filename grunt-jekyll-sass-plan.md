@@ -13,3 +13,5 @@ Processes:
 - write grunt scripts to move files to the correct location
 - configure grunt to run jekyll build
 - configure "development" grunt task to also run and watch for changes
+
+Also Bower to load JS dependencies?
