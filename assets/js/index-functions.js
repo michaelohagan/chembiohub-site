@@ -1,21 +1,36 @@
+
+$(document).ready(function() {
+
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-        || location.hostname == this.hostname) {
-
+                || location.hostname == this.hostname) {
+        var hashStr = this.hash.slice(1);
         var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-                 scrollTop: target.offset().top
-            }, 1000);
+        target = target.length ? target : $('[name=' + hashStr +']');
+
+        if (target.length) {
+            $('html,body').animate({ scrollTop: target.offset().top}, 1000);
+            window.location.hash = hashStr;
             return false;
         }
     }
 });
-$(document).ready(function() {
-  /** Contact form submission */
   
-  $('#contact-form').on('submit', function(e){
+  $('#contact-form').bootstrapValidator({
+        fields: {
+          email: {
+                trigger: 'blur',
+                feedbackIcons: 'false'
+            }
+        }
+    });/** Contact form submission */
+
+ /* $('.ppl-thumb').contenthover({
+      overlay_background:'#000',
+      overlay_opacity:0.8
+  });*/
+  
+  $('.contact-form').on('submit', function(e){
     var valuesToSubmit = JSON.stringify($(this).serializeObject());
     alert(valuesToSubmit);
     $.ajax({
@@ -28,36 +43,21 @@ $(document).ready(function() {
       data: valuesToSubmit,
       dataType: "json"
     }).done(function() {
-      $('#success-message').show();
+      $('#contact-submit-success').fadeToggle( "slow", "linear" );
+      createAutoClosingAlert("#contact-submit-success", 4000);
+    }).fail(function() {
+      $('#contact-submit-error').fadeToggle( "slow", "linear" );
+      createAutoClosingAlert("#contact-submit-error", 4000);
     });
     return false;
   });
 
 });
 
-/*
-$('#blog-widget').FeedEk({
-    FeedUrl : '//chembiohub.ox.ac.uk/feed.xml',
-  MaxCount : 3,
-    ShowDesc : true,
-    ShowPubDate:true,
-    DescCharacterLimit:300,
-    TitleLinkTarget:'_blank'
-  });*/
-
-// $('#forum-widget').FeedEk({
-//     FeedUrl : '//chembiohub.ox.ac.uk/askbot/feeds/rss/',
-//   MaxCount : 5,
-//     ShowDesc : true,
-//     ShowPubDate:true,
-//     DescCharacterLimit:100,
-//     TitleLinkTarget:'_blank'
-//   });
-
-$('.ppl-thumb').contenthover({
-    overlay_background:'#000',
-    overlay_opacity:0.8
-});
+function createAutoClosingAlert(selector, delay) {
+   //var alert = $(selector).alert();
+   window.setTimeout(function() { $(selector).fadeToggle( "slow", "linear" ) }, delay);
+}
 
 vpw = $(window).width();
 vph = $(window).height();
@@ -110,6 +110,4 @@ if (!String.prototype.endsWith) {
     }
   });
 }
-
-
 
