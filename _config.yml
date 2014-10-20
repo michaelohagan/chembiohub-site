@@ -15,7 +15,116 @@ authors:
     display_name: Andrew Stretton
     email: andrew@chembiohub.ox.ac.uk
     github: strets123
+speakers:
+  arussell:
+    display_name: Angela Russell
+    email: ""
+    link: http://www.pharm.ox.ac.uk/research/angela-russell
+    photo: /assets/img/people/Angela_Russell_Chem.png
+    dept: Oncology
+  bkessler:
+    display_name: Benedikt Kessler
+    email: ""
+    link: http://www.ndm.ox.ac.uk/principal-investigators/researcher/benedikt-kessler
+    photo: /assets/img/people/Benedikt_Kessler_TDI.png
+    dept: TDI
+  bmarsden:
+    display_name: Brian Marsden
+    email: brian.marsden@sgc.ox.ac.uk
+    link: http://www.ndm.ox.ac.uk/principal-investigators/researcher/brian-marsden
+    photo: /assets/img/people/Brian_Marsden_SGC.png
+    dept: SGC
+  cbountra:
+    display_name: Chas Bountra
+    email: chas.bountra@sgc.ox.ac.uk
+    link: http://www.ndm.ox.ac.uk/principal-investigators/researcher/chas-bountra
+    photo: /assets/img/people/Chas_Bountra_SGC.png
+    dept: SGC
+  cschofield:
+    display_name: Chris Schofield
+    email: ""
+    link: http://www.chem.ox.ac.uk/oc/cjschofield/
+    photo: /assets/img/people/Chris_Schofield_Chem.png
+    dept: Chemistry
+  debner:
+    display_name: Daniel Ebner
+    email: ""
+    link: http://www.tdi.ox.ac.uk/staff
+    photo: /assets/img/people/Daniel_Ebner_TDI.png
+    dept: TDI
+  ghiggins:
+    display_name: Geoff Higgins
+    email: ""
+    link: http://www.oncology.ox.ac.uk/research/geoff-higgins-1
+    photo: /assets/img/people/Geoff_Higgins_Oncology.png
+    dept: Oncology
+  gdianov:
+    display_name: Grigory Dianov
+    email: ""
+    link: http://www.oncology.ox.ac.uk/research/grigory-dianov/
+    photo: /assets/img/people/Grigory_Dianov_Oncology.png
+    dept: Oncology
+  kporter:
+    display_name: Karen Porter
+    email: karen@chembiohub.ox.ac.uk
+    photo: /assets/img/people/Karen_Porter_CBH.png
+    dept: ChemBio Hub
+  kdavies:
+    display_name: Kay Davies
+    email: ""
+    link: http://www.dpag.ox.ac.uk/team/group-leaders/kay-davies
+    photo: /assets/img/people/Kay_Davies_DPAG.png
+    dept: DPAG
+  nzitzmann:
+    display_name: Nicole Zitzmann
+    email: ""
+    link: http://www.bioch.ox.ac.uk/aspsite/index.asp?pageid=608
+    photo: /assets/img/people/Nicole_Zitzmann_Biochem.png
+    dept: Biochemistry
+  pbrennan:
+    display_name: Paul Brennan
+    email: paul.brennan@sgc.ox.ac.uk
+    link: http://www.ndm.ox.ac.uk/principal-investigators/researcher/paul-brennan
+    photo: /assets/img/people/Paul_brennan_SGC.png
+    dept: SGC
+  rwademartins:
+    display_name: Richard Wade Martins
+    email: ""
+    link: http://www.dpag.ox.ac.uk/research/wade-martins-group
+    photo: /assets/img/people/Richard_Wade_Martins_DPAG.png
+    dept: DPAG
+  sknapp:
+    display_name: Stefan Knapp
+    email: stefan.knapp@sgc.ox.ac.uk
+    link: http://www.ndm.ox.ac.uk/principal-investigators/researcher/stefan-knapp
+    photo: /assets/img/people/Stefan_Knapp_TDI.png
+    dept: TDI
+  sconway:
+    display_name: Stuart Conway
+    email: ""
+    link: http://research.chem.ox.ac.uk/stuart-conway.aspx
+    photo: /assets/img/people/Stuart_Conway_Chem.png
+    dept: Chemistry
+  susannemk:
+    display_name: Susanne Muller Knapp
+    email: susanne.muller-knapp@sgc.ox.ac.uk
+    link: http://www.ndm.ox.ac.uk/principal-investigators/researcher/susanne-muller-knapp
+    photo: /assets/img/people/Susanne_Muller_Knapp_SGC.png
+    dept: SGC
+  tbrown:
+    display_name: Tom Brown
+    email: ""
+    link: http://www.oncology.ox.ac.uk/research/professor-tom-brown
+    photo: /assets/img/people/Tom_Brown_Oncology.png
+    dept: Oncology
+  tmilne:
+    display_name: Tom Milne
+    email: ""
+    link: http://www.imm.ox.ac.uk/thomas-milne
+    photo: /assets/img/people/Tom_Milne_WIMM.png
+    dept: WIMM
 
 name: Chembio Hub Blog
 description: A team blog about the technology and stories behind the chembio hub project
 url: //chembiohub.ox.ac.uk/
+excerpt_separator: "<!-- more -->"
