@@ -17,6 +17,19 @@ p.nexa {
 	background-color:#72777f;
 	padding-top:10px;
 }
+.subheading.capabilities {
+  background-color:rgb(190,15,52);
+}
+.subheading.people {
+  background-color:rgb(68,104,125);
+}
+.subheading.data {
+  background-color:rgb(170,179,0);
+}
+.subheading.extra {
+  background-color:rgb(207,122,48);
+}
+
 .subheading{
 	padding:10px;	
 }

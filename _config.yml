@@ -15,6 +15,131 @@ authors:
     display_name: Andrew Stretton
     email: andrew@chembiohub.ox.ac.uk
     github: strets123
+speakers:
+  - first_name: Angela
+    last_name: Russell
+    email: ""
+    link: "http://www.pharm.ox.ac.uk/research/angela-russell"
+    photo: "/assets/img/people/Angela_Russell_Chem.png"
+    dept: "Oncology"
+
+  - first_name: Benedikt
+    last_name: Kessler
+    email: ""
+    link: http://www.ndm.ox.ac.uk/principal-investigators/researcher/benedikt-kessler
+    photo: /assets/img/people/Benedikt_Kessler_TDI.png
+    dept: TDI
+
+  - first_name: Brian 
+    last_name: Marsden
+    email: brian.marsden@sgc.ox.ac.uk
+    link: http://www.ndm.ox.ac.uk/principal-investigators/researcher/brian-marsden
+    photo: /assets/img/people/Brian_Marsden_SGC.png
+    dept: SGC
+
+  - first_name: Chas 
+    last_name: Bountra
+    email: chas.bountra@sgc.ox.ac.uk
+    link: http://www.ndm.ox.ac.uk/principal-investigators/researcher/chas-bountra
+    photo: /assets/img/people/Chas_Bountra_SGC.png
+    dept: SGC
+
+  - first_name: Chris 
+    last_name: Schofield
+    email: ""
+    link: http://www.chem.ox.ac.uk/oc/cjschofield/
+    photo: /assets/img/people/Chris_Schofield_Chem.png
+    dept: Chemistry
+
+  - first_name: Daniel 
+    last_name: Ebner
+    email: ""
+    link: http://www.tdi.ox.ac.uk/staff
+    photo: /assets/img/people/Daniel_Ebner_TDI.png
+    dept: TDI
+
+  - first_name: Geoff 
+    last_name: Higgins
+    email: ""
+    link: http://www.oncology.ox.ac.uk/research/geoff-higgins-1
+    photo: /assets/img/people/Geoff_Higgins_Oncology.png
+    dept: Oncology
+
+  - first_name: Grigory 
+    last_name: Dianov
+    email: ""
+    link: http://www.oncology.ox.ac.uk/research/grigory-dianov/
+    photo: /assets/img/people/Grigory_Dianov_Oncology.png
+    dept: Oncology
+
+  - first_name: Karen 
+    last_name: Porter
+    email: karen@chembiohub.ox.ac.uk
+    photo: /assets/img/people/Karen_Porter_CBH.png
+    dept: ChemBio Hub
+
+  - first_name: Kay 
+    last_name: Davies
+    email: ""
+    link: http://www.dpag.ox.ac.uk/team/group-leaders/kay-davies
+    photo: /assets/img/people/Kay_Davies_DPAG.png
+    dept: DPAG
+
+  - first_name: Nicole 
+    last_name: Zitzmann
+    email: ""
+    link: http://www.bioch.ox.ac.uk/aspsite/index.asp?pageid=608
+    photo: /assets/img/people/Nicole_Zitzmann_Biochem.png
+    dept: Biochemistry
+
+  - first_name: Paul 
+    last_name: Brennan
+    email: paul.brennan@sgc.ox.ac.uk
+    link: http://www.ndm.ox.ac.uk/principal-investigators/researcher/paul-brennan
+    photo: /assets/img/people/Paul_brennan_SGC.png
+    dept: SGC
+
+  - first_name: Richard 
+    last_name: Wade Martins
+    email: ""
+    link: http://www.dpag.ox.ac.uk/research/wade-martins-group
+    photo: /assets/img/people/Richard_Wade_Martins_DPAG.png
+    dept: DPAG
+
+  - first_name: Stefan 
+    last_name: Knapp
+    email: stefan.knapp@sgc.ox.ac.uk
+    link: http://www.ndm.ox.ac.uk/principal-investigators/researcher/stefan-knapp
+    photo: /assets/img/people/Stefan_Knapp_TDI.png
+    dept: TDI
+
+  - first_name: Stuart 
+    last_name: Conway
+    email: ""
+    link: http://research.chem.ox.ac.uk/stuart-conway.aspx
+    photo: /assets/img/people/Stuart_Conway_Chem.png
+    dept: Chemistry
+
+  - first_name: Susanne 
+    last_name: Muller Knapp
+    email: susanne.muller-knapp@sgc.ox.ac.uk
+    link: http://www.ndm.ox.ac.uk/principal-investigators/researcher/susanne-muller-knapp
+    photo: /assets/img/people/Susanne_Muller_Knapp_SGC.png
+    dept: SGC
+
+  - first_name: Tom 
+    last_name: Brown
+    email: ""
+    link: http://www.oncology.ox.ac.uk/research/professor-tom-brown
+    photo: /assets/img/people/Tom_Brown_Oncology.png
+    dept: Oncology
+
+  - first_name: Tom 
+    last_name: Milne
+    email: ""
+    link: http://www.imm.ox.ac.uk/thomas-milne
+    photo: /assets/img/people/Tom_Milne_WIMM.png
+    dept: WIMM
 
 name: Chembio Hub Blog
 description: A team blog about the technology and stories behind the chembio hub project
@@ -31,3 +156,5 @@ sitemap:
         - "/blog/index.html"
     change_frequency_name: "change_frequency"
     priority_name: "priority"
+
+excerpt_separator: "<!-- more -->"
