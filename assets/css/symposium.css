@@ -15,3 +15,30 @@ h1.symp {
 .silver {
 	color:#72777f;
 }
+.talkholder {
+	background-clip: content-box;
+	background-color: #eee;
+	margin-bottom: 20px;
+	min-height:200px;
+}
+.row.content-box {
+	padding: 0 20px;
+}
+.content-box p {
+	font-size:1em;
+	line-height:1.3em;
+	font-family:NexaBold;
+	margin-bottom: 5px;
+}
+p.speaker-name {
+	margin-top:10px;
+}
+.talkholder .btn-group {
+	margin-top: 20px;
+}
+.symp-section.active {
+	background-color: #ddd;
+}
+.large.top-margin {
+	margin-top: 50px;
+}

@@ -1,20 +1,60 @@
 <!-- Talks -->
 <div class="row">
 	
-	<div>
+	<div class="row">
 		<!-- Introductory paragraph -->
+		<h2 class="subheading">Talks and Slides</h2>
+		<p>Any introductory text here? Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
 
 	<div class="row">
 
-		<div class="col-3">
-				<!-- photo -->
+		
 				
-				<!-- download link -->
+				{% for speaker in site.speakers | sort:"talk_order" %}
+					<div class="col-xs-6 col-md-3 talkholder">
+						<div class="row">
+							<div class="hidden-xs col-sm-6 col-lg-4">
+								<!-- photo -->
+								<img src="{{ speaker.photo }}" data-name="{{ speaker.first_name }} {{ speaker.last_name }}" data-dept="{{ speaker.dept }}" data-weblink="{{ speaker.link }}" class="ppl-thumb"> 
+							</div>
+							<div class="hidden-xs col-sm-6 col-lg-8">
+								<!-- download link -->
+								<div class="btn-group">
+								  <button class="btn btn-default" data-toggle="modal" data-target="#slides_{{ speaker.last_name }}">
+								    <span class="glyphicon glyphicon-picture"></span> View slides
+								  </button>
+								</div>
+							</div>
+						</div>
+						<div class="row content-box">
+							<p class="speaker-name"><a href="{{ speaker.link }}">{{ speaker.first_name }}&nbsp;{{ speaker.last_name }}</a></p>
+							<p>{{ speaker.talk_title }}</p>
+						</div>
+						
+					</div>
+					<div id="slides_{{speaker.last_name}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+			    			<div class="modal-content">
+			    				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+								<iframe src="//www.slideshare.net/slideshow/embed_code/{{ speaker.embed_code }}" width="100%" height="400px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="hidden-xs"></iframe>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+
+				
+
+				
 				<!-- name -->
 				<!-- talk title -->
 
-		</div>
+		
 
 	</div>
 
@@ -23,4 +63,9 @@
 <!-- Posters -->
 <div class="row">
 	<!-- Introductory paragraph -->
+	<div class="row">
+		<!-- Introductory paragraph -->
+		<h2 class="blue">Posters</h2>
+		<p>Click each thumbnail to display the poster</p>
+	</div>
 </div>
