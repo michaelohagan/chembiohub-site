@@ -143,5 +143,18 @@ speakers:
 
 name: Chembio Hub Blog
 description: A team blog about the technology and stories behind the chembio hub project
-url: //chembiohub.ox.ac.uk/
+url: http//chembiohub.ox.ac.uk
+
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+        - "/blog/index.html"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
+
 excerpt_separator: "<!-- more -->"

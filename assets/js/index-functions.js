@@ -100,11 +100,3 @@ if (!String.prototype.endsWith) {
   });
 }
 
-
-//we are only accepting direct submissions from Oxford emails at the moment - 
-function isEmailOx() {
-  if ($('#email').val().endsWith('ox.ac.uk')) {
-    return true;
-  }
-  return false;
-}
