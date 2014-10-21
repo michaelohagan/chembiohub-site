@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Chembio Hub Blog</title>
+<description>A team blog about the technology and stories behind the chembio hub project</description>	
+<link>http//chembiohub.ox.ac.uk</link>
+<atom:link href="http//chembiohub.ox.ac.uk/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>UX in Scientific Software</title>
+<description>&lt;p&gt;On Tuesday 30th September 2014 Karen, Andrew and I attended a &lt;a href='http://www.meetup.com/UX-Oxford/'&gt;UX Oxford&lt;/a&gt; talk by Roman Pichler &lt;a href='http://twitter.com/romanpichler'&gt;(@romanpichler)&lt;/a&gt; entitled &amp;#8220;UX and Scrum&amp;#8221;.&lt;!-- more --&gt; The slides have been made available &lt;a href='http://www.slideshare.net/romanpichler/ux-and-scrum'&gt;here&lt;/a&gt;. In the talk there were a number of interesting ideas put forward relating to UX (User Experience) in terms of project planning - when to start thinking about UX planning, ideas on how UX can fit an agile/scrum workflow and how to reliably keep track of and advance UX plans and ideas.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Concepts from the talk&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;One interesting idea was that of the &lt;strong&gt;persona&lt;/strong&gt;, complementary to a user story. This describes a target user type in more detail, outlining what they hope to get out of the system and how they may use the system, rather than describing one specific linear process. Roman has constructed a template for building personas which can be found &lt;a href='http://www.romanpichler.com/tools/persona-template/'&gt;here&lt;/a&gt;. More information on personas in project planning can be found &lt;a href='http://guide.agilealliance.org/guide/personas.html'&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Another concept was that of the &lt;strong&gt;Product Canvas&lt;/strong&gt;. This image is taken directly from the slideshare presentation linked above.&lt;/p&gt;
+&lt;pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'&gt;REXML could not parse this XML/HTML: 
+&amp;lt;iframe src=&amp;quot;//www.slideshare.net/slideshow/embed_code/35561129?startSlide=19&amp;quot; width=&amp;quot;100%&amp;quot; height=&amp;quot;500&amp;quot; frameborder=&amp;quot;0&amp;quot; marginwidth=&amp;quot;0&amp;quot; marginheight=&amp;quot;0&amp;quot; scrolling=&amp;quot;no&amp;quot; style=&amp;quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&amp;quot; allowfullscreen&amp;gt; &amp;lt;/iframe&amp;gt;&lt;/pre&gt;
+&lt;p&gt;The idea is to list personas next to high level ideas and functionality, epics and any other &amp;#8220;regular&amp;#8221; aspect of project or sprint planning, as well as work to be done in the next sprint or fully visualised UX designs. This canvas layout is intended for the early stages of planning but is useful for keeping track of initial good ideas which can be lost due to early difficulty in implementing or lying slightly outside the scope of the project at the start.&lt;/p&gt;
+
+&lt;p&gt;Attending this talk was useful in forcing us to think about how UX was important in the work we do. For myself in particular, it made me think about UX applied to scientific software in general.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What makes bad UX for scientific web based software?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Simply saying that command line software, like a lot of bioinformatics tools, does not have good UX and should be put into a web page is not correct. The fact that such software continues to be used and preferred by many scientific researchers speaks volumes - they find the user experience good enough to provide them with the data they need. Command line interfaces also provide an easy way for communicating help and usage information quickly - an instant message to someone with a 30 character command can get someone up and running (or out of an awkward situation) easily. In summary there is a danger in confusing user interface with user experience.&lt;/p&gt;
+
+&lt;p&gt;A lot of problems for web based scientific software come from trying to directly replicate the command line experience and options in a web form - dropdowns and checklists everywhere. The functionality is the same but the user experience is not.&lt;/p&gt;
+
+&lt;p&gt;An assumption that users of the software are experienced in using scientific software is also a pitfall. Web based scientific software should enable non-technical users to use the tool and obtain consistent reproducible results comparable with more experienced or technical users.&lt;/p&gt;
+
+&lt;p&gt;Lastly, an assumption that users have a computer or other system capable of displaying recent technologies is also a recipe for poor UX. This is becoming less of a problem with tools like Modernizr and developers are adding more fallbacks to their code but it is still a potential problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What makes good UX for scientific web based software?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Firstly, good UX is not simply about adding eye candy or new technology - this can help but is not the be all and end all. There has to be a good reason for adding something like this.&lt;/p&gt;
+
+&lt;p&gt;There are some things that can enhance UX of scientific software.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Clear instructions&lt;/strong&gt; - Having a monolithic help page lifted from a unix man or an entire wiki dedicated to your software application does not mean it is clear how to perform simple tasks, leading to frustrated users. Contextual help, simple paragraphs at the start of sections, small help snippets for individual form fields casn all help explain how to use your software and minimise frustration.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Example datasets&lt;/strong&gt; - Having your users know exactly what the system will and will not handle in terms of data formats and files can also contribute towards a good user experience. A good way to dao this is to have example dummy data&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Better charting engines&lt;/strong&gt; - lots of options here such as D3.js that can create interactive charts, narrow down data and display datasets in different ways. You can often also write your own plugins and charts for these if the functionality or chart formats do not exist.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Helpful erroring&lt;/strong&gt; - at some point a user will try and enter terrible or corrupted data or put files in the wrong field. Mysterious 404 error pages or stack traces are not the correct way to handle this of course. Having the system helpfully suggest the action to take to correct this, with an explanation why the data is bad may help the user experience.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Presets and profiles&lt;/strong&gt; - scientific software often has a lot of different options for data parameters, which can take a while for the user to tweak and configure. Having a system which has sets of sensible defaults for commonly used settings for the tool can speed up the process for the user and enhance the user experience.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Do you have any thoughts on UX in scientific software? Get in touch with us, we would love to hear your thoughts and how they could be applied to software we write.&lt;/p&gt;</description>
+<pubDate>Thu, 02 Oct 2014 00:00:00 +0100</pubDate>
+<link>http//chembiohub.ox.ac.uk/2014/10/02/UX-in-scientific-software.html</link>
+<guid isPermaLink="true">http//chembiohub.ox.ac.uk/2014/10/02/UX-in-scientific-software.html</guid>
+</item>
+
+<item>
+<title>ChemBio Crunch - A simple tool to analyse and manipulate ChemBio assay data</title>
+<description>&lt;p&gt;The eventual goals of the ChemBio Hub project include enabling bench scientists to &lt;strong&gt;submit their biological activity data to public databases&lt;/strong&gt; and to share it with specific people.&lt;!-- more --&gt; When faced with this challenge an obvious research informatics solution would be to create a data repository and to then address the processes required to get data in there.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;We decided the needs of the bench scientist had to come first in order to build a community around ChemBio Hub&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;One frequent challenge we encountered when talking to scientists is summarised in this diagram:&lt;/p&gt;
+
+&lt;p&gt;Data is copied and pasted between different tools and Excel templates, calculated results may then be stored in a shared drive, database etc. Advantages of this approach include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Familiarity and good documentation for the tools used&lt;/li&gt;
+
+&lt;li&gt;Low learning curve compared to programming&lt;/li&gt;
+
+&lt;li&gt;Flexibility, easy to adapt to changes in experimental setup&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Issues that arise from this approach include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Copy and paste&lt;/strong&gt; errors leading to incorrect data&lt;/li&gt;
+
+&lt;li&gt;Management of &lt;strong&gt;template files&lt;/strong&gt; in the group can be difficult&lt;/li&gt;
+
+&lt;li&gt;No consistent &lt;strong&gt;output data&lt;/strong&gt; format -&lt;strong&gt;Duplication of effort&lt;/strong&gt; between scientists and groups&lt;/li&gt;
+
+&lt;li&gt;Mixing of data and processing logic makes &lt;strong&gt;output hard to use&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;As we believe that there must be a better way - ChemBio Crunch was born&lt;/strong&gt; There are 4 simple steps to use ChemBio Crunch&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Upload raw data files&lt;/li&gt;
+
+&lt;li&gt;Validate plate signals and remove outlier wells&lt;/li&gt;
+
+&lt;li&gt;Calculate IC50, hill slope and relevant errors&lt;/li&gt;
+
+&lt;li&gt;Export as XLSX, png or PPT&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Results can then be compared using the publication-ready charting features of ChemBio Crunch&lt;/p&gt;</description>
+<pubDate>Tue, 30 Sep 2014 00:00:00 +0100</pubDate>
+<link>http//chembiohub.ox.ac.uk/2014/09/30/chembiocrunch-a-data-management-tool.html</link>
+<guid isPermaLink="true">http//chembiohub.ox.ac.uk/2014/09/30/chembiocrunch-a-data-management-tool.html</guid>
+</item>
+
+<item>
+<title>Setting up the ChemBioHub blog</title>
+<description>&lt;p&gt;As a part of our commitment to provide quality collaborative tools and outreach to the chemical biology community, we have set up this blog to provide some additional information about how we are creating new tools, helping researchers and enabling collaboration.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;We had a look at a number of options for the technology platform we could use for the blog. It had to be something that was lightweight and also editable by the less-technical members of our group. The big CMS platforms, such as Wordpress and Drupal, provide good WYSIWYG (what you see is what you get) tools for text entry but are too heavyweight and complicated for what we wanted to achieve. Also considered was &lt;a href='http://ghost.org'&gt;Ghost&lt;/a&gt;, a lightweight blogging platform written in javascript and node.js - while this fulfilled the remit of being lightweight, and allows users to add content via Markdown, it required another hosting solution to be set up and configured.&lt;/p&gt;
+
+&lt;p&gt;A good compromise was found with &lt;a href='http://pages.github.com'&gt;Github Pages&lt;/a&gt; and &lt;a href='http://jekyllrb.com/'&gt;Jekyll&lt;/a&gt;. Jekyll is a lightweight, blog-aware platform which allows users to draft posts for review, publish them, use templating and all the things which developers expect. Plus it has the advantage of being hosted and run on Github - this enables us to have an open source, transparent blog structure that other users can take away and use themselves! Because it uses Markdown, the less-technical members of our group can easily add blog entries for review before they are published and gain an insight into how version control via Github works. That helps the developers explain their work better!&lt;/p&gt;
+
+&lt;p&gt;Setting up the blog was a breeze thanks to the great &lt;a href='https://help.github.com/articles/using-jekyll-with-pages'&gt;documentation&lt;/a&gt; and &lt;a href='https://github.com/jekyll/jekyll/wiki/Sites'&gt;existing sites&lt;/a&gt; that could be used as examples. The most useful of these was &lt;a href='https://github.com/rebase/rebase.github.com'&gt;Github Rebase&lt;/a&gt; with easy to follow code and simple structure.&lt;/p&gt;
+
+&lt;p&gt;So now we have a blog, we need to fill it! There will be more articles added here by different members of the team, if you have questions for any of us, just click the author name and send us an email!&lt;/p&gt;</description>
+<pubDate>Tue, 02 Sep 2014 00:00:00 +0100</pubDate>
+<link>http//chembiohub.ox.ac.uk/2014/09/02/setting-up.html</link>
+<guid isPermaLink="true">http//chembiohub.ox.ac.uk/2014/09/02/setting-up.html</guid>
+</item>
+
+</channel>
+</rss>
