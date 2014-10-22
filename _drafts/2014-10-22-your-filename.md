@@ -22,6 +22,7 @@ Integral to all of this was making the tools user friendly and easy to install.
 - Firstly you can trial the [tool online](http://oommppaa.sgc.ox.ac.uk/OOMMPPAA/) - we even made a demo!
 - Secondly windows users can download the tool using our [three click windows installer](https://bitbucket.org/abradley/oommppaa/downloads/Setup.exe). This has full functionality and allows the user to process their own datasets
 - Thirdly you can get the [full source code](https://bitbucket.org/abradley/oommppaa/src). Licensed under Apache. Pull it  from bitbucket. Branch it. Merge it. Use it. We'd love anyone to get involved.
+
 More details about all of these options are [available here](https://bitbucket.org/abradley/oommppaa/wiki/Home)
 
 ### How can I learn more?
