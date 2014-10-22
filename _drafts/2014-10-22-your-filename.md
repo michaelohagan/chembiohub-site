@@ -26,3 +26,4 @@ Integral to all of this was making the tools user friendly and easy to install.
 ### How can I learn more?
 If you want to know more about the tool. How we've used it. How it works in more detail [go here](http://pubs.acs.org/doi/pdfplus/10.1021/ci500245d). If that's still not enough, email me at oommppaa.help@gmail.com. 
 
+_Anthony is a DPhil student at the University of Oxford. He works between the Structural Genomics Consortium, Statistics and industrial collaborators GlaxoSmithKline. Anthony develops computational tools to aid drug discovery. [Learn more here](http://www.dtc.ox.ac.uk/people/11/bradley/)_
