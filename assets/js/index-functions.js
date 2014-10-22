@@ -14,6 +14,12 @@ $(document).ready(function() {
       overlay_background:'#000',
       overlay_opacity:0.8
   });*/
+
+//Click event to scroll to top
+  $('.scrollToTop').click(function(){
+    $('html, body').animate({scrollTop : 0},800);
+    return false;
+  });
   
   $('.contact-form').on('success.form.bv', function(e){
     //var $form = $(e.target);
@@ -21,7 +27,7 @@ $(document).ready(function() {
     e.preventDefault();
     var form_id = this.id;
     var valuesToSubmit = JSON.stringify($(this).serializeObject());
-    alert(valuesToSubmit);
+    //alert(valuesToSubmit);
     $.ajax({
       type: "POST",
       beforeSend: function(xhr) {

@@ -541,6 +541,11 @@ form.contact-form {
   font-size: 1.2em;
 }
 
+.scrollToTop {
+  background-color: transparent;
+  color: white;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
