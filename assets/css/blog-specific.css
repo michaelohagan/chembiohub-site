@@ -47,12 +47,16 @@ h1 > a.title-link {
     font-size:1em;
     padding:10px;
 }
+.comment-total {
+    margin-top: -20px;
+}
 
 @media (min-width: 768px) {
     .post .body {
         /*border: 1px solid #72777f;*/
         background-color:#eee;
         padding: 10px;
+        margin-bottom: 20px;
     }
     .blog-intro {
         font-size:1.2em;
