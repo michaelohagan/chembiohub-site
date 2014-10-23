@@ -2,6 +2,7 @@
 title: OOMMPPAA - directed synthesis and data analysis tool
 author: anthony
 layout: post
+excerpt: OOMMPPAA is a novel computational tool designed to inform compound design by combining structural and activity data, created by Anthony Bradley who has kindly agreed to feature on our blog.
 ---
 
 **Motivaton**
