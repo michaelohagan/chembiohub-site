@@ -42,3 +42,35 @@ p.speaker-name {
 .large.top-margin {
 	margin-top: 50px;
 }
+.img-circle.blue-bg.symp-stat {
+	height: 50px;
+	width: 50px;
+}
+.symp-stat {
+	padding: 12px 0;
+	text-align: center;
+}
+.vert-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.stat-holder {
+	min-height:100px;
+}
+.takehome {
+	height:140px;
+}
+.takehome .img-circle.blue-bg {
+	background-color: green;
+}
+blockquote {
+	min-height:150px;
+}
+blockquote footer {
+	position:absolute;
+	bottom:0;
+}
+.alt-bg {
+	background-color:#eee;
+}
