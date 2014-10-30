@@ -5,7 +5,7 @@ layout: post
 excerpt: OOMMPPAA is a novel computational tool designed to inform compound design by combining structural and activity data, created by Anthony Bradley who has kindly agreed to feature on our blog.
 ---
 
-**Motivaton**
+**Motivation**
 The ambition of this work is to help chemists to decide which compound to make next. Currently a chemist will use the available protein structures and activity data, find trends in this data and use this to inform future compound design. When I started my project it became clear there were two ways this is currently done.
 
 <img src="/assets/img/oommppaa.png" style="width:100%" alt="Screenshot of Anthony Bradley's OOMMPPAA tool">
