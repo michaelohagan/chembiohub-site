@@ -17,9 +17,9 @@ title: Symposium - Chemical biology across the University of Oxford
 				<div class="col-md-3 col-sm-4 col-xs-12 text-left symp-info">
 				<p>
 					<span class="glyphicon glyphicon-calendar"></span> Monday 10th November 2014<br/>
-					<span class="glyphicon glyphicon-map-marker"></span> Saïd Business School<br/>
+					<span class="glyphicon glyphicon-map-marker"></span> <a href="http://www.sbs.ox.ac.uk/contact/how-find-us">Saïd Business School</a><br/>
 					<span class="glyphicon glyphicon-time"></span> 09:00 - 17:20<br/>
-					<img src="/assets/img/social-icons/twitter.png" style="width:28px; margin: -6px -6px 0;"> #OxCBH
+					<img src="/assets/img/social-icons/twitter.png" style="width:28px; margin: -6px -6px 0;" onclick='return !window.open(this.href);'> <a href="https://twitter.com/hashtag/oxcbh?f=realtime" onclick='return !window.open(this.href);'>#OxCBH</a>
 				</p>
 				</div>
 
@@ -174,7 +174,9 @@ title: Symposium - Chemical biology across the University of Oxford
 				
 				
 			  </div>
-
+			  <div class="row">
+			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
+			  </div>
 
 
 			  <div class="large top-margin">
@@ -182,7 +184,9 @@ title: Symposium - Chemical biology across the University of Oxford
 			  	<h2 class="subheading">Registration</h2>
 			  	<iframe src="https://www.eventbrite.com/event/12870107839?ref=eweb" frameborder="0" height="1000" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
 			  </div>
-
+			  <div class="row">
+			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
+			  </div>
 
 			  <div class="large top-margin">
 			  	<a id="agenda"></a> 
@@ -426,6 +430,10 @@ title: Symposium - Chemical biology across the University of Oxford
 
 			  </div>
 
+			  <div class="row">
+			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
+			  </div>
+
 			  <div class="large top-margin">
 			  	<a id="talks"></a>
 			  	<!-- posters page as an include? -->
@@ -450,3 +458,11 @@ title: Symposium - Chemical biology across the University of Oxford
 
 
 <script type="text/javascript" src="/assets/js/slide-down-links.js"></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.scrollToTop').click(function(){
+    	$('html, body').animate({scrollTop : 0},800);
+    	return false;
+  	});
+});
+</script>

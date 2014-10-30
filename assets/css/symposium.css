@@ -9,6 +9,12 @@
 .symp-info p {
 	font-size:1em;
 }
+.symp-info a {
+	color:white;
+}
+.symp-info a:hover {
+	color:#007770;
+}
 h1.symp {
 	font-size:4em;
 }
