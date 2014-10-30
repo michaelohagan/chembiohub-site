@@ -68,6 +68,10 @@ $("#equip-search-btn").click(function(e){
   e.preventDefault();
   redirect_search();
 });
+// redirect to outbound page
+function loadSearch() {
+  document.location = href;
+}
 
 function redirect_search(){
   var v = $("input#equip-search").val();
@@ -84,10 +88,7 @@ function redirect_search(){
       // redirect after one second if recording takes too long
     setTimeout(loadSearch, 1000);
  
-    // redirect to outbound page
-    function loadSearch() {
-      document.location = href;
-    }
+    
   }
 }
 
