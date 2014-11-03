@@ -57,7 +57,8 @@ function createAutoClosingAlert(form_id, selector, delay) {
 vpw = $(window).width();
 vph = $(window).height();
 if($('.functional').height() < vph) {
-  $('.functional').height(vph); 
+  //$('.functional').height(vph); 
+  $('.functional').css('min-height',vph);
 }
 $(window).keypress(function(e) {
     if (e.keyCode == 13) {
