@@ -129,8 +129,14 @@ ga('create','UA-55063522-1');ga('send','pageview');
   });
  
 })(jQuery); 
+
+$(document).ready(function() {
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+});
 </script>
-    
 
    
 
