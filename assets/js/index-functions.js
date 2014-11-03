@@ -71,7 +71,8 @@ $("#equip-search-btn").click(function(e){
 });
 // redirect to outbound page
 function loadSearch() {
-  document.location = href;
+  //document.location = href;
+  window.open(href,'_blank');
 }
 
 function redirect_search(){
