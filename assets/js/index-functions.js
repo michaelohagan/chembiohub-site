@@ -39,10 +39,10 @@ $(document).ready(function() {
       dataType: "json"
     }).done(function() {
       $('#contact-submit-success').fadeToggle( "slow", "linear" );
-      createAutoClosingAlert(form_id,".contact-submit-success", 4000);
+      createAutoClosingAlert(form_id,".contact-submit-success", 500);
     }).fail(function() {
       $('#contact-submit-error').fadeToggle( "slow", "linear" );
-      createAutoClosingAlert(form_id,".contact-submit-error", 4000);
+      createAutoClosingAlert(form_id,".contact-submit-error", 500);
     });
     return false;
   });
