@@ -82,6 +82,7 @@ speakers:
   - first_name: Karen 
     last_name: Porter
     email: karen@chembiohub.ox.ac.uk
+    link: ""
     photo: /assets/img/people/Karen_Porter_CBH.png
     dept: ChemBio Hub
     talk_title: The ChemBio Hub project - supporting world class chemical biology research

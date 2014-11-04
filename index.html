@@ -217,7 +217,7 @@ margin: 0 auto;" onclick='return !window.open(this.href);'><span class="glyphico
 										<div class="col-sm-2 col-xs-4">
 											<img src="{{ speaker.photo }}" data-name="{{ speaker.first_name }} {{speaker.last_name}}" data-dept="{{ speaker.dept }}" data-weblink="{{ speaker.link }}" class="ppl-thumb"> 
 											<div class="contenthover">
-											    <p><a href="{{ speaker.link }}" onclick='return !window.open(this.href);'>{{ speaker.first_name }}<br/>{{ speaker.last_name }}</a></p>
+											    <p class="blue">{% if speaker.link != "" %}<a href="{{ speaker.link }}" onclick='return !window.open(this.href);'>{% endif %}{{ speaker.first_name }}<br/>{{ speaker.last_name }}{% if speaker.link != "" %}</a>{% endif %}</p>
 											</div>
 										</div>
 								{% if forloop.last or currentmod == '5' %}
