@@ -7,3 +7,221 @@ topstats:
     number: 216
   - description: Event photos shared
     number: 103
+
+attendees:
+  - first_name: Martin 
+    last_name: Cohn
+    email: ""
+    link: ""
+    photo: ""
+    dept: Biochemistry
+
+  - first_name: Shona 
+    last_name: Murphy
+    email: ""
+    link: ""
+    photo: ""
+    dept: Pathology
+
+  - first_name: Mark 
+    last_name: Howarth
+    email: ""
+    link: ""
+    photo: ""
+    dept: Biochemistry
+
+  - first_name: Robert 
+    last_name: Gilbert
+    email: ""
+    link: ""
+    photo: ""
+    dept: STRUBI
+
+  - first_name: Chris 
+    last_name: Norbury
+    email: ""
+    link: ""
+    photo: ""
+    dept: Pathology
+
+  - first_name: Grant 
+    last_name: Churchill
+    email: ""
+    link: ""
+    photo: ""
+    dept: Pharmacology
+
+  - first_name: David 
+    last_name: Vaux
+    email: ""
+    link: ""
+    photo: ""
+    dept: Pathology
+
+  - first_name: Trevor 
+    last_name: Sharp
+    email: ""
+    link: ""
+    photo: ""
+    dept: Pharmacology
+
+  - first_name: Christina 
+    last_name: Redfield
+    email: ""
+    link: ""
+    photo: ""
+    dept: Biochemistry
+
+  - first_name: Darren 
+    last_name: Dixon
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+
+  - first_name: Mark 
+    last_name: Moloney
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+
+  - first_name: Simon 
+    last_name: Kollnberger
+    email: ""
+    link: ""
+    photo: ""
+    dept: NDORMS
+
+  - first_name: Francis 
+    last_name: Szele
+    email: ""
+    link: ""
+    photo: ""
+    dept: DPAG
+
+  - first_name: Peter 
+    last_name: O'Neill
+    email: ""
+    link: ""
+    photo: ""
+    dept: Oncology
+
+  - first_name: Skirmantas 
+    last_name: Kriaucionis
+    email: ""
+    link: ""
+    photo: ""
+    dept: Oncology
+
+  - first_name: Veronica 
+    last_name: Buckle
+    email: ""
+    link: ""
+    photo: ""
+    dept: WIMM
+
+  - first_name: Ester 
+    last_name: Hammond
+    email: ""
+    link: ""
+    photo: ""
+    dept: Oncology
+
+  - first_name: Terry
+    last_name: Rabbitts
+    email: ""
+    link: ""
+    photo: ""
+    dept: WIMM
+
+  - first_name: Richard
+    last_name: Gibbons
+    email: ""
+    link: ""
+    photo: ""
+    dept: WIMM
+
+  - first_name: Sridhar 
+    last_name: Vasudevan
+    email: ""
+    link: ""
+    photo: ""
+    dept: Pharmacology
+
+  - first_name: Michael 
+    last_name: Willis
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+
+  - first_name: Konstantinos
+    last_name: Lefkemmiatis
+    email: ""
+    link: ""
+    photo: ""
+    dept: DPAG
+
+  - first_name: Holger
+    last_name: Kramer
+    email: ""
+    link: ""
+    photo: ""
+    dept: DPAG
+
+  - first_name: James 
+    last_name: Kennedy
+    email: ""
+    link: ""
+    photo: ""
+    dept: RDM
+
+  - first_name: Francesca
+    last_name: Buffa
+    email: ""
+    link: ""
+    photo: ""
+    dept: Oncology
+
+  - first_name: Peter
+    last_name: McHugh
+    email: ""
+    link: ""
+    photo: ""
+    dept: Oncology
+
+  - first_name: Adrian
+    last_name: Harris
+    email: ""
+    link: ""
+    photo: ""
+    dept: Oncology
+
+  - first_name: Alison 
+    last_name: Woollard
+    email: ""
+    link: ""
+    photo: ""
+    dept: Biochemistry
+
+  - first_name: Katja
+    last_name: Simon
+    email: ""
+    link: ""
+    photo: ""
+    dept: Experimental Medicine
+
+  - first_name: Jeremy
+    last_name: Robertson
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+
+  - first_name: Mike
+    last_name: Stratford
+    email: ""
+    link: ""
+    photo: ""
+    dept: Oncology

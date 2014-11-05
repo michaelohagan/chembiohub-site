@@ -97,43 +97,46 @@
 
 
 			<div class="col-xs-4 clearfix">
-				<div class="row takehome">
+				<!-- <div class="row takehome">
 					<div class="img-circle col-xs-3 blue-bg symp-stat">
 					</div>
-					<div class="col-xs-9">
+					<div class="col-xs-12">
 						<p class="blue nexa"><em>"I would like Crunch to be able to handle some of my screening data and remove a processing step"</em></p>
 					</div>
-				</div>
-				<div class="row">
+				</div> -->
+				<div class="row ">
 					<blockquote class="blockquote-reverse">
+						<p><em>"I would like Crunch to be able to handle some of my screening data and remove a processing step"</em></p>
 					  <footer>AN Other<small>Dept of Chemistry</small></footer>
 					</blockquote>
 				</div>
 			</div>
 			<div class="col-xs-4">
-				<div class="row takehome">
+				<!-- <div class="row takehome">
 					<div class="img-circle col-xs-3 blue-bg symp-stat">
 					</div>
-					<div class="col-xs-9">
+					<div class="col-xs-12">
 						<p class="blue nexa"><em>"It would be useful to use Crunch to share my screening data with a related department in the university"</em></p>
 					</div>
-				</div>
-				<div class="row">
+				</div> -->
+				<div class="row ">
 					<blockquote class="blockquote-reverse">
+						<p><em>"It would be useful to use Crunch to share my screening data with a related department in the university"</em></p>
 					  <footer>AN Other<small>Dept of Wherever</small></footer>
 					</blockquote>
 				</div>
 			</div>
 			<div class="col-xs-4">
-				<div class="row takehome">
+				<!-- <div class="row takehome">
 					<div class="img-circle col-xs-3 blue-bg symp-stat">
 					</div>
-					<div class="col-xs-9">
+					<div class="col-xs-12">
 						<p class="blue nexa"><em>"I would like to link Crunch to our specific piece of equipment and share data with group members"</em></p>
 					</div>
-				</div>
-				<div class="row">
+				</div> -->
+				<div class="row ">
 					<blockquote class="blockquote-reverse">
+						<p><em>"I would like to link Crunch to our specific piece of equipment and share data with group members"</em></p>
 					  <footer>AN Other<small>Dept of Wherever</small></footer>
 					</blockquote>
 				</div>
@@ -163,10 +166,9 @@
 			<div class="col-xs-6 centered">
 				<!-- image of us demoing crunch at the symposium here -->
 				<p class="blue nexa">Here are some event suggestions from the day...</p>
-				<h2 class="blue"><em>"An event idea would go here"</em></h2>
-				<h2 class="blue"><em>"An event idea would go here"</em></h2>
-				<h2 class="blue"><em>"An event idea would go here"</em></h2>
-				<h2 class="blue"><em>"An event idea would go here"</em></h2>
+				<div class="suggestion"><p class="blue"><em>"What happens if we make this an enormous paragraph that has to wrap around a couple of times?"</em></p></div>
+				<div class="suggestion"><p class="blue"><em>"An event idea would go here"</em></p></div>
+				<div class="suggestion"><p class="blue"><em>"An event idea would go here"</em></p></div>
 				
 			</div>
 
@@ -193,6 +195,22 @@
 <div class="row">
 
 	<h2 class="subheading">Symposium attendees</h2>
+
+				{% for person in site.attendees | sort:"last_name" %}
+					<div class="col-xs-6 col-md-3 attendee">
+						<div class="row">
+							<div class="hidden-xs col-sm-6 col-lg-4">
+								<!-- photo -->
+								<img {% if person.photo != "" %}src="{{ person.photo }}"{% else %}src="/assets/img/people/default_user_icon.png"{% endif %} data-name="{{ person.first_name }} {{ person.last_name }}" data-dept="{{ person.dept }}" data-weblink="{{ person.link }}" class="ppl-thumb" style="width:100%"> 
+							</div>
+							<div class="hidden-xs col-sm-6 col-lg-8">
+								<p class="person-name nexa"><a href="{{ person.link }}">{{ person.first_name }}<br/>{{ person.last_name }}</a></p>
+								<p class="nexa"><small>{{ person.dept }}</small></p>
+							</div>
+						</div>
+						
+					</div>
+				{% endfor %}
 
 
 

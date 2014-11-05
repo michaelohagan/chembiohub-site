@@ -98,3 +98,59 @@ p.overlay {
 	min-width:250px;
 	width:290px;
 }
+.suggestion {
+	position: relative;
+	width: 100%;
+	height:100px;
+	text-align: center;
+	line-height: 1.2em;
+	padding:10px;
+	background-color: #fff;
+	border: 2px solid #666;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	-moz-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+	margin-bottom:30px;
+	background-color:#FCFCC7;
+}
+.suggestion:before
+{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 30px;
+	top: 96px;
+	border: 10px solid;
+	border-color: #666 transparent transparent #666;
+}
+.suggestion:after
+{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 32px;
+	top: 94px;
+	border: 8px solid;
+	border-color: #FCFCC7 transparent transparent #FCFCC7;
+}
+.suggestion p {
+	line-height: 1.2em;
+	margin: 0;
+}
+
+.attendee p.person-name {
+	margin-bottom: 0;
+	line-height: 1.3em;
+	padding-top: 10px;
+}
+.attendee {
+	background-clip: content-box;
+	background-color: #eee;
+	margin-bottom: 20px;
+	height: 120px;
+}

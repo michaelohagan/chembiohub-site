@@ -1,0 +1,3 @@
+[submodule "chembiohub-theme"]
+	path = chembiohub-theme
+	url = https://github.com/thesgc/chembiohub-theme.git
