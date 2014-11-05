@@ -544,6 +544,7 @@ form.contact-form {
 .scrollToTop {
   background-color: transparent;
   color: white;
+  cursor: pointer;
 }
 
 /* Small devices (tablets, 768px and up) */
