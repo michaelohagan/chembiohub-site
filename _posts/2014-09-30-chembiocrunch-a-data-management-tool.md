@@ -8,8 +8,6 @@ The eventual goals of the ChemBio Hub project include enabling bench scientists 
 
 **We decided the needs of the bench scientist had to come first in order to build a community around ChemBio Hub**
 
-One frequent challenge we encountered when talking to scientists is summarised in this diagram:
-
 Data is copied and pasted between different tools and Excel templates, calculated results may then be stored in a shared drive, database etc.
 Advantages of this approach include:
 - Familiarity and good documentation for the tools used
