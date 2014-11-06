@@ -1,14 +1,14 @@
 <form id="contact-form-{{ include.form_id_slug }}" name="contact-form" class="contact-form" action="/app/contacts/">
 	<div class="form-group">
-		<label class="control-label" for="contact-email">Email Address</label>
+		<label class="control-label" for="email-{{ include.form_id_slug }}">Email Address</label>
 		<input type="text" 
 		class="form-control" 
-		id="email" 
+		id="email-{{ include.form_id_slug }}" 
 		name="email" 
 		data-bv-regexp-regexp="[A-Za-z0-9._%+-]+@[A-Za-z0-9._%+-]+\.ox\.ac\.uk" 
 		data-bv-regexp="true" 
 		data-bv-message="This is not valid" 
-		data-bv-regexp-message="You must use a 'ox.ac.uk' email address to use this message system. If you are from outside the University, please use the main <a href='/#contact' style='text-decoration: underline;''>Contact email</a>" required></input>
+		data-bv-regexp-message="You must use a 'ox.ac.uk' email address to use this message system. If you are from outside the University, please use the main <a href='/#contact' style='text-decoration: underline;''>Contact email</a>" required />
 		<!-- <div class="alert alert-warning alert-dismissible hidden" role="alert" id="non-oxford-email">
 		  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 		  <strong>Warning!</strong> You must use a 'ox.ac.uk' email address to use this message system. If you are from outside the University, please use the main <a href="/#contact" style="text-decoration: underline;">Contact email</a>
@@ -16,7 +16,7 @@
 	</div>
 	<div class="form-group">
 		<label class="control-label" for="researchgate_profile-{{ include.form_id_slug }}">ResearchGate profile link</label>
-		<input type="url" class="form-control" id="researchgate_profile-{{ include.form_id_slug }}" name="researchgate_profile" placeholder="(Optional)"></input>
+		<input type="url" class="form-control" id="researchgate_profile-{{ include.form_id_slug }}" name="researchgate_profile" placeholder="(Optional)" />
 	</div>
 	<div class="form-group">
 		<label class="control-label" for="contact-message-{{ include.form_id_slug }}">Message</label>
@@ -33,7 +33,7 @@
 	<label class="white" for="contact-struc">Optional Chemical Structure (SD format)</label>
 	<input type="file" class="form-control" id="contact-struc" name="contact-struc"></input> -->
 	<input type="hidden" id="subject" name="subject" value="{{ include.subject_value }}">
-	<button id="" class="btn btn-success btn-block top-margin">Send Your Message</button>
+	<button class="btn btn-success btn-block top-margin">Send Your Message</button>
 	<div class="alert alert-success contact-submit-success" role="alert" style="display:none;">
 	  <strong>Thanks for your message!</strong> The team will be in touch with you shortly.
 	</div>

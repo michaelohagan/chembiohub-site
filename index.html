@@ -213,7 +213,7 @@ margin: 0 auto;" onclick='return !window.open(this.href);'><span class="glyphico
 									<div class="row ppl">
 								{% endif %}
 										<div class="col-sm-2 col-xs-4">
-											<img src="{{ speaker.photo }}" data-name="{{ speaker.first_name }} {{speaker.last_name}}" data-dept="{{ speaker.dept }}" data-weblink="{{ speaker.link }}" class="ppl-thumb"> 
+											<img src="{{ speaker.photo }}" data-name="{{ speaker.first_name }} {{speaker.last_name}}" data-dept="{{ speaker.dept }}" data-weblink="{{ speaker.link }}" class="ppl-thumb" alt="{{ speaker.first_name }} {{speaker.last_name}}"> 
 											<div class="contenthover">
 											    <p class="blue">{% if speaker.link != "" %}<a href="{{ speaker.link }}" onclick='return !window.open(this.href);'>{% endif %}{{ speaker.first_name }}<br/>{{ speaker.last_name }}{% if speaker.link != "" %}</a>{% endif %}</p>
 											</div>
@@ -259,7 +259,7 @@ margin: 0 auto;" onclick='return !window.open(this.href);'><span class="glyphico
 						<h2 class="blue centered">Use our ChemBio Crunch tool to process your data.</h2>
 
 					</div>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/39713029" width="100%" height="400px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="hidden-xs"></iframe> 
+					<iframe src="//www.slideshare.net/slideshow/embed_code/39713029" width="100%" height="400" frameborder="0" scrolling="no" class="hidden-xs"></iframe> 
 
 					<!-- Carousel currently hidden-->
 					<div id="carousel-crunch" style="display:none" class="carousel slide" data-ride="carousel">
@@ -309,7 +309,7 @@ margin: 0 auto;" onclick='return !window.open(this.href);'><span class="glyphico
 						<p>OOMMPPAA is a novel computational tool designed to inform compound design by combining structural and activity data.</p>
 						<p class="small">Citation: <a href="http://pubs.acs.org/doi/pdfplus/10.1021/ci500245d">Anthony R. Bradley, Ian D. Wall, Darren V.S. Green, Charlotte M. Deane, Brian D. Marsden (2014). OOMMPPAA: A tool to aid directed synthesis by the combined analysis of activity and structural data</a></p>
 						
-						<div><a href="http://oommppaa.sgc.ox.ac.uk/OOMMPPAA/" onclick='return !window.open(this.href);'><button class="btn btn-primary btn-block">Show me OOMMPPAA</button></a></div>
+						<div><a href="http://oommppaa.sgc.ox.ac.uk/OOMMPPAA/" onclick='return !window.open(this.href);' class="btn btn-primary btn-block" role="button">Show me OOMMPPAA</a></div>
 
 					</div>
 				</div>
@@ -418,7 +418,7 @@ margin: 0 auto;" onclick='return !window.open(this.href);'><span class="glyphico
 	</div><!-- /row -->
 
 	<div class="row centered group-photo">
-		<img class="max-image" src="/assets/img/cbh-group-photo.jpg">
+		<img class="max-image" src="/assets/img/cbh-group-photo.jpg" alt="Group Photo">
 	</div>
 	<div class="col-md-2 col-xs-12  centered">
 		<div class="visible-xs visible-sm">(L-R)</div>
