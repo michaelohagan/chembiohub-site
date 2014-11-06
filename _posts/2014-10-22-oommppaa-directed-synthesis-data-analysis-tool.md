@@ -32,7 +32,7 @@ It is important to note - OOMMPPAA does not predict anything. It doesn't itself 
 Integral to all of this was making the tools user friendly and easy to install.
 
 - Firstly you can trial the <a href="http://oommppaa.sgc.ox.ac.uk/OOMMPPAA/" onclick='return !window.open(this.href);'>tool online</a> - we even made a demo!
-- Secondly windows users can download the tool using our <a href="https://bitbucket.org/abradley/oommppaa/downloads/Setup.exe" onclick='return !window.open(this.href);'>three click windows installer</a>. This has full functionality and allows the user to process their own datasets
+- Secondly windows users can download the tool using our <a href="https://bitbucket.org/abradley/oommppaa/downloads/" onclick='return !window.open(this.href);'>three click windows installer</a>. This has full functionality and allows the user to process their own datasets
 - Thirdly you can get the <a href="https://bitbucket.org/abradley/oommppaa/src" onclick='return !window.open(this.href);'>full source code</a>. Licensed under Apache. Pull it  from bitbucket. Branch it. Merge it. Use it. We'd love anyone to get involved.
 
 More details about all of these options are <a href="https://bitbucket.org/abradley/oommppaa/wiki/Home" onclick='return !window.open(this.href);'>available here</a>
