@@ -4,7 +4,7 @@ author: paul
 layout: post
 ---
 
-On Tuesday 30th September 2014 Karen, Andrew and I attended a <a href="http://www.meetup.com/UX-Oxford/" onclick='return !window.open(this.href);'>UX Oxford</a> talk by Roman Pichler <a href="http://twitter.com/romanpichler" onclick='return !window.open(this.href);'>(@romanpichler)</a> entitled "UX and Scrum".<!-- more --> The slides have been made available <a href="http://www.slideshare.net/romanpichler/ux-and-scrum" onclick='return !window.open(this.href);'>here</a>.  In the talk there were a number of interesting ideas put forward relating to UX (User Experience) in terms of project planning - when to start thinking about UX planning, ideas on how UX can fit an agile/scrum workflow and how to reliably keep track of and advance UX plans and ideas.
+On Tuesday 30th September 2014 Karen, Andrew and I attended a <a href="http://www.meetup.com/UX-Oxford/" onclick='return !window.open(this.href);'>UX Oxford</a> talk by Roman Pichler <a href="https://twitter.com/romanpichler" onclick='return !window.open(this.href);'>(@romanpichler)</a> entitled "UX and Scrum".<!-- more --> The slides have been made available <a href="http://www.slideshare.net/romanpichler/ux-and-scrum" onclick='return !window.open(this.href);'>here</a>.  In the talk there were a number of interesting ideas put forward relating to UX (User Experience) in terms of project planning - when to start thinking about UX planning, ideas on how UX can fit an agile/scrum workflow and how to reliably keep track of and advance UX plans and ideas.
 
 **Concepts from the talk**
 
