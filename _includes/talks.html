@@ -33,7 +33,7 @@
 							</div>
 						</div>
 						<div class="row content-box">
-							<p class="speaker-name"><a href="{{ speaker.link }}">{{ speaker.first_name }}&nbsp;{{ speaker.last_name }}</a></p>
+							<p class="speaker-name"><a href="{{ speaker.link }}" onclick='return !window.open(this.href);'>{{ speaker.first_name }}&nbsp;{{ speaker.last_name }}</a></p>
 							<p>{{ speaker.talk_title }}</p>
 						</div>
 						
