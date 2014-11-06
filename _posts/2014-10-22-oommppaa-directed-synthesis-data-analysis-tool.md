@@ -31,13 +31,13 @@ It is important to note - OOMMPPAA does not predict anything. It doesn't itself 
 **How can I use it?**
 Integral to all of this was making the tools user friendly and easy to install.
 
-- Firstly you can trial the [tool online](http://oommppaa.sgc.ox.ac.uk/OOMMPPAA/) - we even made a demo!
-- Secondly windows users can download the tool using our [three click windows installer](https://bitbucket.org/abradley/oommppaa/downloads/Setup.exe). This has full functionality and allows the user to process their own datasets
-- Thirdly you can get the [full source code](https://bitbucket.org/abradley/oommppaa/src). Licensed under Apache. Pull it  from bitbucket. Branch it. Merge it. Use it. We'd love anyone to get involved.
+- Firstly you can trial the <a href="http://oommppaa.sgc.ox.ac.uk/OOMMPPAA/" onclick='return !window.open(this.href);'>tool online</a> - we even made a demo!
+- Secondly windows users can download the tool using our <a href="https://bitbucket.org/abradley/oommppaa/downloads/Setup.exe" onclick='return !window.open(this.href);'>three click windows installer</a>. This has full functionality and allows the user to process their own datasets
+- Thirdly you can get the <a href="https://bitbucket.org/abradley/oommppaa/src" onclick='return !window.open(this.href);'>full source code</a>. Licensed under Apache. Pull it  from bitbucket. Branch it. Merge it. Use it. We'd love anyone to get involved.
 
-More details about all of these options are [available here](https://bitbucket.org/abradley/oommppaa/wiki/Home)
+More details about all of these options are <a href="https://bitbucket.org/abradley/oommppaa/wiki/Home" onclick='return !window.open(this.href);'>available here</a>
 
 **How can I learn more?**
-If you want to know more about the tool. How we've used it. How it works in more detail [go here](http://pubs.acs.org/doi/pdfplus/10.1021/ci500245d). If that's still not enough, email me at oommppaa.help@gmail.com. 
+If you want to know more about the tool. How we've used it. How it works in more detail <a href="http://pubs.acs.org/doi/pdfplus/10.1021/ci500245d" onclick='return !window.open(this.href);'>go here</a>. If that's still not enough, email me at oommppaa.help@gmail.com. 
 
-_Anthony is a DPhil student at the University of Oxford. He works between the Structural Genomics Consortium, Statistics and industrial collaborators GlaxoSmithKline. Anthony develops computational tools to aid drug discovery. [Learn more here](http://www.dtc.ox.ac.uk/people/11/bradley/)_
+_Anthony is a DPhil student at the University of Oxford. He works between the Structural Genomics Consortium, Statistics and industrial collaborators GlaxoSmithKline. Anthony develops computational tools to aid drug discovery. <a href="http://www.dtc.ox.ac.uk/people/11/bradley/">Learn more here</a>_.

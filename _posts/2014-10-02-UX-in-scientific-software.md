@@ -4,11 +4,11 @@ author: paul
 layout: post
 ---
 
-On Tuesday 30th September 2014 Karen, Andrew and I attended a [UX Oxford](http://www.meetup.com/UX-Oxford/) talk by Roman Pichler [(@romanpichler)](http://twitter.com/romanpichler) entitled "UX and Scrum".<!-- more --> The slides have been made available [here](http://www.slideshare.net/romanpichler/ux-and-scrum).  In the talk there were a number of interesting ideas put forward relating to UX (User Experience) in terms of project planning - when to start thinking about UX planning, ideas on how UX can fit an agile/scrum workflow and how to reliably keep track of and advance UX plans and ideas.
+On Tuesday 30th September 2014 Karen, Andrew and I attended a <a href="http://www.meetup.com/UX-Oxford/" onclick='return !window.open(this.href);'>UX Oxford</a> talk by Roman Pichler <a href="http://twitter.com/romanpichler" onclick='return !window.open(this.href);'>(@romanpichler)</a> entitled "UX and Scrum".<!-- more --> The slides have been made available <a href="http://www.slideshare.net/romanpichler/ux-and-scrum" onclick='return !window.open(this.href);'>here</a>.  In the talk there were a number of interesting ideas put forward relating to UX (User Experience) in terms of project planning - when to start thinking about UX planning, ideas on how UX can fit an agile/scrum workflow and how to reliably keep track of and advance UX plans and ideas.
 
 **Concepts from the talk**
 
-One interesting idea was that of the **persona**, complementary to a user story. This describes a target user type in more detail, outlining what they hope to get out of the system and how they may use the system, rather than describing one specific linear process. Roman has constructed a template for building personas which can be found [here](http://www.romanpichler.com/tools/persona-template/). More information on personas in project planning can be found [here](http://guide.agilealliance.org/guide/personas.html).
+One interesting idea was that of the **persona**, complementary to a user story. This describes a target user type in more detail, outlining what they hope to get out of the system and how they may use the system, rather than describing one specific linear process. Roman has constructed a template for building personas which can be found <a href="http://www.romanpichler.com/tools/persona-template/" onclick='return !window.open(this.href);'>here</a>. More information on personas in project planning can be found <a href="http://guide.agilealliance.org/guide/personas.html" onclick='return !window.open(this.href);'>here</a>.
 
 Another concept was that of the **Product Canvas**. This image is taken directly from the slideshare presentation linked above.
 
