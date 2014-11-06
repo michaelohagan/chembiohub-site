@@ -1,4 +1,4 @@
-{% for post in site.posts | limit: 3 %}
+{% for post in site.posts | limit: 2 %}
 	{% assign author = site.authors[post.author] %}
 	<div class="text-left"><div><h2 class="blue"><a href="{{ post.url | remove_first:'/' }}">{{ post.title }}</a></h2>
 		<small><abbr>{{ post.date | date_to_string }}</abbr> by <a href="mailto:{{author.email}}">{{author.display_name}}</a></small></div>
