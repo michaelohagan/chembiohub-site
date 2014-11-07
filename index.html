@@ -370,10 +370,14 @@ margin: 0 auto;" onclick='return !window.open(this.href);'><span class="glyphico
 
 
 		<div class="col-md-4 col-sm-6 hidden-xs widget">
-			<h3 class="subheading">
- 				Social Media mentions for...
+			
+ 			<h3 class="subheading">
+ 				Our Project Blog
  		</h3>
-			<div id="forum-widget" ><iframe src="http://twubs.com/embed/oxcbh/?messagesPerPage=5&headerBgColor=%23002147&headerTextColor=%23ffffff" width="350" height="500" frameborder="0"><a href="http://twubs.com/oxcbh">#oxcbh</a></iframe></div>	
+			<div id="blog-widget" >
+				{% include blog-widget.html %}
+			</div>
+			
 		</div>			
 		<div class="col-md-4 col-sm-6 hidden-xs widget">
 			<h3 class="subheading">
@@ -385,11 +389,10 @@ margin: 0 auto;" onclick='return !window.open(this.href);'><span class="glyphico
 		</div>		
 		<div class="col-md-4 col-sm-6 hidden-xs widget">
 			<h3 class="subheading">
- 				Our Project Blog
- 		</h3>
-			<div id="blog-widget" >
-				{% include blog-widget.html %}
-			</div>	
+ 				Social Media mentions for...
+ 			</h3>
+				<div id="forum-widget" ><a class="twitter-timeline" href="https://twitter.com/hashtag/oxcbh" data-widget-id="530758711539548161">#oxcbh Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>	
 		</div>
 
 		<div class="col-md-4 col-sm-6 hidden-xs widget">
