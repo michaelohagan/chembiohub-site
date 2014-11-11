@@ -10,4 +10,4 @@ We set up a survey to attempt to capture interest in aspects of chemical biology
 each individual question with a horizontal bar graph overlaying the picture which was used as an illustration
 Have each question result held in a config file, create a template for each one.
 
-What do these results mean for ChemBio Hub? It's clear that visualisation of assay results is a key requirement of a great any chemical biology researchers
+What do these results mean for ChemBio Hub? It's clear that **visualisation of assay results** is a key requirement of a great any chemical biology researchers
