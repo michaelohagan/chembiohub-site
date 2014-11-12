@@ -225,3 +225,125 @@ attendees:
     link: ""
     photo: ""
     dept: Oncology
+
+walkupsurvey:
+  - title: Validation and Cleansing of raw data
+    yesses: 22
+    nos: 10
+    photopath: "/assets/img/survey-metaphors/Cleansing_raw_data.jpg"
+
+  - title: Combining and Comparing Datasets
+    yesses: 24
+    nos: 8
+    photopath: "/assets/img/survey-metaphors/Comparing_datasets.jpg"
+
+  - title: Curve Fitting
+    yesses: 22
+    nos: 10
+    photopath: "/assets/img/survey-metaphors/Curve_fitting.jpg"
+
+  - title: Visualisation of Assay Data
+    yesses: 28
+    nos: 4
+    photopath: "/assets/img/survey-metaphors/Data_visualisation.jpg"
+
+  - title: Image Analysis
+    yesses: 18
+    nos: 14
+    photopath: "/assets/img/survey-metaphors/Image_analysis.jpg"
+
+  - title: Data Sharing
+    yesses: 30
+    nos: 2
+    photopath: "/assets/img/survey-metaphors/Sharing_data.jpg"
+
+  - title: Assay-specific tools e.g. qPCR or ELISA
+    yesses: 22
+    nos: 10
+    photopath: "/assets/img/survey-metaphors/Assay.jpg"
+
+posters:
+
+  - title: In vitro Screening Platforms for the Discovery of Novel Epigenetic Probes
+    firstname: James 
+    surname: Bennett
+    thumbnail: "bennett-poster.png"
+    pdf: "Bennett.pdf"
+    num: 1
+
+  - title: OOMMPPAA A tool to aid directed synthesis using activity and structural data
+    firstname: Anthony 
+    surname: Bradley
+    thumbnail: "bradley-poster.png"
+    pdf: "Bradley.pdf"
+    num: 2
+
+  - title: Direct detection of DNA Methylation at CpA units
+    firstname: Marie 
+    surname: Johannsen
+    thumbnail: "johannsen-poster.png"
+    pdf: "Johannsen.pdf"
+    num: 3
+
+  - title: Tetramates as Anticancer and Antibacterial core scaffolds
+    firstname: Laia 
+    surname: Josa Culleré
+    thumbnail: "josa-cullere-poster.png"
+    pdf: "Josa Cullere.pdf"
+    num: 4
+
+  - title: Investigating changes in TCA cycle metabolism associated with isocitrate dehydrogenase (IDH) mutations in brain tumours
+    firstname: James 
+    surname: McCullagh
+    thumbnail: "mccullagh-poster.png"
+    pdf: "McCullagh.pdf"
+    num: 5
+
+  - title: A Chemoproteomic Assay for the Analysis of Bromodomain Inhibitors
+    firstname: Kathryn 
+    surname: Pugh
+    thumbnail: "pugh-poster.png"
+    pdf: "Pugh.pdf"
+    num: 6
+
+  - title: Biomolecular Solution-state NMR in the Department of Chemistry
+    firstname: Christina 
+    surname: Redfield
+    thumbnail: "redfield-poster.png"
+    pdf: "Redfield.pdf"
+    num: 7
+
+  - title: Highly Efficient Enzymatic Fluorescent Labelling of DNA Probes
+    firstname: Xiaomei 
+    surname: Ren
+    thumbnail: "ren-poster.png"
+    pdf: "Ren.pdf"
+    num: 8
+
+  - title: ESR12 Rapid access to anticancer natural products and diverse derivatives
+    firstname: Philipp 
+    surname: Schäfer
+    thumbnail: "schaefer-poster.png"
+    pdf: "Schaefer.pdf"
+    num: 9
+
+  - title: Bioanalysis Core Facility – HPLC and flow cytometry
+    firstname: Mike 
+    surname: Stratford
+    thumbnail: "stratford-poster.png"
+    pdf: "Stratford.pdf"
+    num: 10
+
+  - title: Target Discovery Institute
+    firstname: Dan
+    surname: Ebner
+    thumbnail: "Ebner1.jpg"
+    pdf: "Ebner1.pdf"
+    num: 11
+
+  - title: Establishing a National Phenotypic Screening Capability in the UK
+    firstname: Dan 
+    surname: Ebner
+    thumbnail: "ebner2-poster.png"
+    pdf: "Ebner2.pdf"
+    num: 12
