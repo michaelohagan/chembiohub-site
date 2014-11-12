@@ -1,0 +1,41 @@
+<!-- Posters -->
+<div class="row">
+	<!-- Introductory paragraph -->
+	<div class="row">
+		<!-- Introductory paragraph -->
+		<h2 class="subheading">Posters</h2>
+	</div>
+	<div class="row">
+
+		{% for poster in site.posters %}
+		<div class="col-sm-6 col-md-3">
+		    <div class="thumbnail">
+		    	<div class="img-holder">
+			      <img src="/assets/img/poster-thumbs/{{poster.thumbnail}}" alt="{{poster.title}}">
+			    </div>
+		      <div class="caption">
+		        <h3 class="blue centered">{{poster.title}}</h3>
+		      	<p class="nexa blue centered">{{poster.firstname}} {{poster.surname}}</p>
+		        <p class="centered"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#poster_{{poster.num}}"><span class="glyphicon glyphicon-picture"></span> Expand</a> <a href="/assets/files/posters/{{poster.pdf}}" class="btn btn-default" role="button" onclick='return !window.open(this.href);'><span class="glyphicon glyphicon-download"></span> Download</a></p>
+		      </div>
+		    </div>
+		</div>
+		<div id="poster_{{poster.num}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+
+    			<div class="modal-content">
+    				<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h2 class="modal-title blue">Poster by {{poster.firstname}} {{poster.surname}}</h2>
+					</div>
+					<div class="modal-body">
+						
+						<img src="/assets/img/poster-thumbs/{{poster.thumbnail}}" style="width:100%"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+
+	</div>
+</div>
