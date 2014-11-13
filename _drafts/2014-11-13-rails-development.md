@@ -12,9 +12,9 @@ Since it was a small application, it fitted well as a tutorial application for R
 
 The spec for the application was as follows:
 - users should be able to walk up without entering any personal information to take the survey;
-- the survey should be a linear app, displaying a new question when an answer is given
-- the survey should have a set number of questions (interests), each with a title, descriptive photo and help text.
-- each question should have multiple true or false (_boolean_) answers (preferences) associated with it, which make up the results of the survey
+- the survey should be a linear app, displaying a new question when an answer is given;
+- the survey should have a set number of questions (interests), each with a title, descriptive photo and help text;
+- each question should have multiple true or false (_boolean_) answers (preferences) associated with it, which make up the results of the survey;
 - on reaching the end of the survey, the user should be informed they have completed and the next person should use the same screen to start the survey.
 
 I began by creating a new Rails app 
