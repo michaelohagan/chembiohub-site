@@ -21,4 +21,21 @@ I began by creating a new Rails app
 
 I created objects called interest (the question) and preference (the answer). Each preference belonged to a single interest. An interest could have many preferences.
 
-I created controllers for interests and preferences 
+I created controllers for interests and preferences to handle the flow of input into the application
+
+```ruby
+  def create
+    @interest = Interest.find(params[:interest_id])
+    pref = false
+    if params[:submit] == "no"
+    	pref = true
+    end
+    @preference = @interest.preferences.create(is_preferred: pref)
+    if @interest.next
+      redirect_to @interest.next
+    else
+      redirect_to completed_path
+    end
+  end
+```
+The application needed to loop to show a start/finish page - this meant the addition of a route.
